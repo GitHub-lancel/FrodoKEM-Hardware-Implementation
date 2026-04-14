@@ -1,0 +1,911 @@
+
+*** Running vivado
+    with args -log TOP.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Tue Apr 14 17:44:07 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source TOP.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 534.516 ; gain = 207.641
+Command: read_checkpoint -auto_incremental -incremental D:/FrodoKEM_git/project_1/project_1.srcs/utils_1/imports/synth_1/Frodo_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/FrodoKEM_git/project_1/project_1.srcs/utils_1/imports/synth_1/Frodo_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top TOP -part xc7a35tfgg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tfgg484-2
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 59272
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1253.047 ; gain = 493.277
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'opermode', assumed default net type 'wire' [D:/FrodoKEM_git/SRC/Frodo_top.v:39]
+INFO: [Synth 8-11241] undeclared symbol 'pad', assumed default net type 'wire' [D:/FrodoKEM_git/SRC/control.v:1190]
+WARNING: [Synth 8-6901] identifier 'sqzout64_en' is used before its declaration [D:/FrodoKEM_git/SRC/control.v:122]
+INFO: [Synth 8-11241] undeclared symbol 'clk', assumed default net type 'wire' [D:/FrodoKEM_git/SRC/TOP.v:20]
+INFO: [Synth 8-6157] synthesizing module 'TOP' [D:/FrodoKEM_git/SRC/TOP.v:2]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/FrodoKEM_git/SRC/TOP.v:19]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [D:/FrodoKEM_git/project_1/project_1.runs/synth_1/.Xil/Vivado-58776-DESKTOP-KKLUIKL/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (0#1) [D:/FrodoKEM_git/project_1/project_1.runs/synth_1/.Xil/Vivado-58776-DESKTOP-KKLUIKL/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Frodo_top' [D:/FrodoKEM_git/SRC/Frodo_top.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/FrodoKEM_git/SRC/Frodo_top.v:359]
+INFO: [Synth 8-6157] synthesizing module 'SampleMatrixSet' [D:/FrodoKEM_git/SRC/SampleMatrixSet.v:25]
+	Parameter PARALLEL_NUM bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SampleMatrixSet' (0#1) [D:/FrodoKEM_git/SRC/SampleMatrixSet.v:25]
+INFO: [Synth 8-6157] synthesizing module 'bidirectional_fifo' [D:/FrodoKEM_git/SRC/bidirectional_fifo.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'bidirectional_fifo' (0#1) [D:/FrodoKEM_git/SRC/bidirectional_fifo.v:11]
+INFO: [Synth 8-6157] synthesizing module 'SHAKE' [D:/FrodoKEM_git/SRC/SHAKE.v:29]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/FrodoKEM_git/SRC/SHAKE.v:134]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/FrodoKEM_git/SRC/SHAKE.v:181]
+INFO: [Synth 8-6157] synthesizing module 'Msg_Processor' [D:/FrodoKEM_git/SRC/Msg_Processor.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Msg_Processor' (0#1) [D:/FrodoKEM_git/SRC/Msg_Processor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Keccak' [D:/FrodoKEM_git/SRC/Keccak.v:23]
+INFO: [Synth 8-226] default block is never used [D:/FrodoKEM_git/SRC/Keccak.v:66]
+INFO: [Synth 8-6157] synthesizing module 'KeccakF1600_StatePermute' [D:/FrodoKEM_git/SRC/Keccak.v:150]
+INFO: [Synth 8-6157] synthesizing module 'Rcont' [D:/FrodoKEM_git/SRC/Keccak.v:332]
+INFO: [Synth 8-6155] done synthesizing module 'Rcont' (0#1) [D:/FrodoKEM_git/SRC/Keccak.v:332]
+INFO: [Synth 8-6155] done synthesizing module 'KeccakF1600_StatePermute' (0#1) [D:/FrodoKEM_git/SRC/Keccak.v:150]
+INFO: [Synth 8-6155] done synthesizing module 'Keccak' (0#1) [D:/FrodoKEM_git/SRC/Keccak.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SHAKE' (0#1) [D:/FrodoKEM_git/SRC/SHAKE.v:29]
+INFO: [Synth 8-6157] synthesizing module 'PackSet' [D:/FrodoKEM_git/SRC/PackSet.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'PackSet' (0#1) [D:/FrodoKEM_git/SRC/PackSet.v:22]
+INFO: [Synth 8-6157] synthesizing module 'UnpackSet' [D:/FrodoKEM_git/SRC/UnpackSet.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'UnpackSet' (0#1) [D:/FrodoKEM_git/SRC/UnpackSet.v:22]
+INFO: [Synth 8-6157] synthesizing module 'DecodeSet' [D:/FrodoKEM_git/SRC/DecodeSet.v:23]
+INFO: [Synth 8-6157] synthesizing module 'roundmod' [D:/FrodoKEM_git/SRC/roundmod.v:23]
+	Parameter B bound to: 2 - type: integer 
+	Parameter Q bound to: 15 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'roundmod' (0#1) [D:/FrodoKEM_git/SRC/roundmod.v:23]
+INFO: [Synth 8-6157] synthesizing module 'roundmod__parameterized0' [D:/FrodoKEM_git/SRC/roundmod.v:23]
+	Parameter B bound to: 3 - type: integer 
+	Parameter Q bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'roundmod__parameterized0' (0#1) [D:/FrodoKEM_git/SRC/roundmod.v:23]
+INFO: [Synth 8-6157] synthesizing module 'roundmod__parameterized1' [D:/FrodoKEM_git/SRC/roundmod.v:23]
+	Parameter B bound to: 4 - type: integer 
+	Parameter Q bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'roundmod__parameterized1' (0#1) [D:/FrodoKEM_git/SRC/roundmod.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DecodeSet' (0#1) [D:/FrodoKEM_git/SRC/DecodeSet.v:23]
+INFO: [Synth 8-6157] synthesizing module 'EncodeSet' [D:/FrodoKEM_git/SRC/EncodeSet.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'EncodeSet' (0#1) [D:/FrodoKEM_git/SRC/EncodeSet.v:22]
+INFO: [Synth 8-6157] synthesizing module 'RAM64a' [D:/FrodoKEM_git/project_1/project_1.runs/synth_1/.Xil/Vivado-58776-DESKTOP-KKLUIKL/realtime/RAM64a_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RAM64a' (0#1) [D:/FrodoKEM_git/project_1/project_1.runs/synth_1/.Xil/Vivado-58776-DESKTOP-KKLUIKL/realtime/RAM64a_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'RAM64b' [D:/FrodoKEM_git/project_1/project_1.runs/synth_1/.Xil/Vivado-58776-DESKTOP-KKLUIKL/realtime/RAM64b_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RAM64b' (0#1) [D:/FrodoKEM_git/project_1/project_1.runs/synth_1/.Xil/Vivado-58776-DESKTOP-KKLUIKL/realtime/RAM64b_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'RAM448' [D:/FrodoKEM_git/project_1/project_1.runs/synth_1/.Xil/Vivado-58776-DESKTOP-KKLUIKL/realtime/RAM448_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RAM448' (0#1) [D:/FrodoKEM_git/project_1/project_1.runs/synth_1/.Xil/Vivado-58776-DESKTOP-KKLUIKL/realtime/RAM448_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MatrixAddSet' [D:/FrodoKEM_git/SRC/MatrixAddSet.v:23]
+	Parameter PARALLEL_NUM bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MatrixAddSet' (0#1) [D:/FrodoKEM_git/SRC/MatrixAddSet.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MatrixMACSet' [D:/FrodoKEM_git/SRC/MatrixMACSet.v:11]
+	Parameter PARALLEL_NUM bound to: 28 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MatrixMACSet' (0#1) [D:/FrodoKEM_git/SRC/MatrixMACSet.v:11]
+INFO: [Synth 8-6157] synthesizing module 'MatrixMulAddSet' [D:/FrodoKEM_git/SRC/MatrixMulAddSet.v:24]
+	Parameter PARALLEL_NUM bound to: 28 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MatrixMulAddSet' (0#1) [D:/FrodoKEM_git/SRC/MatrixMulAddSet.v:24]
+INFO: [Synth 8-6157] synthesizing module 'MatrixSubSet' [D:/FrodoKEM_git/SRC/MatrixSubSet.v:24]
+	Parameter PARALLEL_NUM bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MatrixSubSet' (0#1) [D:/FrodoKEM_git/SRC/MatrixSubSet.v:24]
+INFO: [Synth 8-6157] synthesizing module 'control' [D:/FrodoKEM_git/SRC/control.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/FrodoKEM_git/SRC/control.v:567]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/FrodoKEM_git/SRC/control.v:860]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/FrodoKEM_git/SRC/control.v:879]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/FrodoKEM_git/SRC/control.v:922]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/FrodoKEM_git/SRC/control.v:958]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/FrodoKEM_git/SRC/control.v:997]
+INFO: [Synth 8-6157] synthesizing module 'instDecoder' [D:/FrodoKEM_git/SRC/InstDecoder.v:4]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/FrodoKEM_git/SRC/InstDecoder.v:216]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/FrodoKEM_git/SRC/InstDecoder.v:440]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/FrodoKEM_git/SRC/InstDecoder.v:503]
+INFO: [Synth 8-6157] synthesizing module 'ADDRBASE_ROM' [D:/FrodoKEM_git/project_1/project_1.runs/synth_1/.Xil/Vivado-58776-DESKTOP-KKLUIKL/realtime/ADDRBASE_ROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ADDRBASE_ROM' (0#1) [D:/FrodoKEM_git/project_1/project_1.runs/synth_1/.Xil/Vivado-58776-DESKTOP-KKLUIKL/realtime/ADDRBASE_ROM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'INSTROM' [D:/FrodoKEM_git/project_1/project_1.runs/synth_1/.Xil/Vivado-58776-DESKTOP-KKLUIKL/realtime/INSTROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'INSTROM' (0#1) [D:/FrodoKEM_git/project_1/project_1.runs/synth_1/.Xil/Vivado-58776-DESKTOP-KKLUIKL/realtime/INSTROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'instDecoder' (0#1) [D:/FrodoKEM_git/SRC/InstDecoder.v:4]
+WARNING: [Synth 8-689] width (1) of port connection 'pad_o' does not match port width (3) of module 'instDecoder' [D:/FrodoKEM_git/SRC/control.v:1190]
+INFO: [Synth 8-6157] synthesizing module 'RAM_Arbitration' [D:/FrodoKEM_git/SRC/RAM _Arbitration.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RAM_Arbitration' (0#1) [D:/FrodoKEM_git/SRC/RAM _Arbitration.v:6]
+INFO: [Synth 8-6157] synthesizing module 'AddrGenUnit' [D:/FrodoKEM_git/SRC/AddrGenUnit.v:2]
+INFO: [Synth 8-226] default block is never used [D:/FrodoKEM_git/SRC/AddrGenUnit.v:182]
+INFO: [Synth 8-6155] done synthesizing module 'AddrGenUnit' (0#1) [D:/FrodoKEM_git/SRC/AddrGenUnit.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'control' (0#1) [D:/FrodoKEM_git/SRC/control.v:3]
+WARNING: [Synth 8-7071] port 'work_done' of module 'control' is unconnected for instance 'u_control' [D:/FrodoKEM_git/SRC/Frodo_top.v:661]
+WARNING: [Synth 8-7023] instance 'u_control' of module 'control' has 59 connections declared, but only 58 given [D:/FrodoKEM_git/SRC/Frodo_top.v:661]
+INFO: [Synth 8-6155] done synthesizing module 'Frodo_top' (0#1) [D:/FrodoKEM_git/SRC/Frodo_top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/FrodoKEM_git/project_1/project_1.runs/synth_1/.Xil/Vivado-58776-DESKTOP-KKLUIKL/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [D:/FrodoKEM_git/project_1/project_1.runs/synth_1/.Xil/Vivado-58776-DESKTOP-KKLUIKL/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'TOP' (0#1) [D:/FrodoKEM_git/SRC/TOP.v:2]
+WARNING: [Synth 8-7137] Register iloop_reg in module instDecoder has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FrodoKEM_git/SRC/InstDecoder.v:374]
+WARNING: [Synth 8-7137] Register jloop_reg in module instDecoder has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FrodoKEM_git/SRC/InstDecoder.v:385]
+WARNING: [Synth 8-7137] Register kloop_reg in module instDecoder has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FrodoKEM_git/SRC/InstDecoder.v:396]
+WARNING: [Synth 8-6014] Unused sequential element addrd_add_r_reg was removed.  [D:/FrodoKEM_git/SRC/control.v:362]
+WARNING: [Synth 8-6014] Unused sequential element loopkfull_r_reg was removed.  [D:/FrodoKEM_git/SRC/control.v:366]
+WARNING: [Synth 8-6014] Unused sequential element loopifull_r_reg was removed.  [D:/FrodoKEM_git/SRC/control.v:388]
+WARNING: [Synth 8-6014] Unused sequential element fifo_448outvalflag_reg was removed.  [D:/FrodoKEM_git/SRC/control.v:616]
+WARNING: [Synth 8-6014] Unused sequential element samplepadcnt_reg was removed.  [D:/FrodoKEM_git/SRC/control.v:660]
+WARNING: [Synth 8-3848] Net decode4outcntmax in module/entity control does not have driver. [D:/FrodoKEM_git/SRC/control.v:325]
+WARNING: [Synth 8-3848] Net work_done in module/entity control does not have driver. [D:/FrodoKEM_git/SRC/control.v:99]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_Frodo_top'. This will prevent further optimization [D:/FrodoKEM_git/SRC/TOP.v:28]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila'. This will prevent further optimization [D:/FrodoKEM_git/SRC/TOP.v:19]
+WARNING: [Synth 8-7129] Port skipe[8] in module AddrGenUnit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port skipe[7] in module AddrGenUnit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port skipe[6] in module AddrGenUnit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port skipe[5] in module AddrGenUnit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port skipe[4] in module AddrGenUnit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port skipe[3] in module AddrGenUnit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port skipe[2] in module AddrGenUnit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port skipe[1] in module AddrGenUnit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port skipe[0] in module AddrGenUnit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prefixa[1] in module RAM_Arbitration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prefixb[1] in module RAM_Arbitration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prefixc[1] in module RAM_Arbitration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prefixd[1] in module RAM_Arbitration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prefixe[1] in module RAM_Arbitration is either unconnected or has no load
+WARNING: [Synth 8-7129] Port work_done in module control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sqzout448_val in module control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port encodeOut_val in module control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port padflag[2] in module Msg_Processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port padflag[1] in module Msg_Processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port padflag[0] in module Msg_Processor is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1410.926 ; gain = 651.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1410.926 ; gain = 651.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1410.926 ; gain = 651.156
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.317 . Memory (MB): peak = 1410.926 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/FrodoKEM.gen/sources_1/ip/ADDRBASE_ROM/ADDRBASE_ROM/ADDRBASE_ROM_in_context.xdc] for cell 'u_Frodo_top/u_control/u_instDecoder/addrom'
+Finished Parsing XDC File [d:/FrodoKEM.gen/sources_1/ip/ADDRBASE_ROM/ADDRBASE_ROM/ADDRBASE_ROM_in_context.xdc] for cell 'u_Frodo_top/u_control/u_instDecoder/addrom'
+Parsing XDC File [d:/FrodoKEM.gen/sources_1/ip/INSTROM/INSTROM/INSTROM_in_context.xdc] for cell 'u_Frodo_top/u_control/u_instDecoder/your_instance_name'
+Finished Parsing XDC File [d:/FrodoKEM.gen/sources_1/ip/INSTROM/INSTROM/INSTROM_in_context.xdc] for cell 'u_Frodo_top/u_control/u_instDecoder/your_instance_name'
+Parsing XDC File [d:/FrodoKEM.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'instance_name'
+Finished Parsing XDC File [d:/FrodoKEM.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'instance_name'
+Parsing XDC File [d:/FrodoKEM.gen/sources_1/ip/RAM64a/RAM64a/RAM64a_in_context.xdc] for cell 'u_Frodo_top/ram64a'
+Finished Parsing XDC File [d:/FrodoKEM.gen/sources_1/ip/RAM64a/RAM64a/RAM64a_in_context.xdc] for cell 'u_Frodo_top/ram64a'
+Parsing XDC File [d:/FrodoKEM.gen/sources_1/ip/RAM64b/RAM64b/RAM64b_in_context.xdc] for cell 'u_Frodo_top/ram64b'
+Finished Parsing XDC File [d:/FrodoKEM.gen/sources_1/ip/RAM64b/RAM64b/RAM64b_in_context.xdc] for cell 'u_Frodo_top/ram64b'
+Parsing XDC File [d:/FrodoKEM.gen/sources_1/ip/RAM448/RAM448/RAM448_in_context.xdc] for cell 'u_Frodo_top/uRAM448'
+Finished Parsing XDC File [d:/FrodoKEM.gen/sources_1/ip/RAM448/RAM448/RAM448_in_context.xdc] for cell 'u_Frodo_top/uRAM448'
+Parsing XDC File [d:/FrodoKEM_git/project_1/project_1.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila'
+Finished Parsing XDC File [d:/FrodoKEM_git/project_1/project_1.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila'
+Parsing XDC File [D:/FrodoKEM_git/SRC/clk.xdc]
+Finished Parsing XDC File [D:/FrodoKEM_git/SRC/clk.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/FrodoKEM_git/SRC/clk.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1492.906 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1492.906 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_Frodo_top/ram64a' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_Frodo_top/ram64b' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_Frodo_top/uRAM448' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_Frodo_top/u_control/u_instDecoder/your_instance_name' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1492.906 ; gain = 733.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tfgg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1492.906 ; gain = 733.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1492.906 ; gain = 733.137
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'CS_reg' in module 'Msg_Processor'
+INFO: [Synth 8-802] inferred FSM for state register 'CS_reg' in module 'SHAKE'
+INFO: [Synth 8-802] inferred FSM for state register 'CS_reg' in module 'DecodeSet'
+INFO: [Synth 8-802] inferred FSM for state register 'CS_reg' in module 'EncodeSet'
+INFO: [Synth 8-802] inferred FSM for state register 'CS_reg' in module 'instDecoder'
+INFO: [Synth 8-802] inferred FSM for state register 'substate_reg' in module 'control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              PROCESSMSG |                               00 |                               00
+            FINALPROCESS |                               01 |                               01
+                   CLEAR |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'CS_reg' using encoding 'sequential' in module 'Msg_Processor'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_NS_reg' [D:/FrodoKEM_git/SRC/SHAKE.v:137]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_NS_reg' [D:/FrodoKEM_git/SRC/SHAKE.v:137]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 PROCESS |                            00001 |                              000
+                 PADDING |                            00010 |                              001
+                  SQUEEZ |                            00100 |                              011
+                   CLEAR |                            01000 |                              100
+                  ABSORB |                            10000 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'CS_reg' using encoding 'one-hot' in module 'SHAKE'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_NS_reg' [D:/FrodoKEM_git/SRC/SHAKE.v:137]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_NS_reg' [D:/FrodoKEM_git/SRC/DecodeSet.v:74]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_NS_reg' [D:/FrodoKEM_git/SRC/DecodeSet.v:74]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 RECEIVE |                              001 |                               00
+                  OUTPUT |                              010 |                               01
+                   CLEAR |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'CS_reg' using encoding 'one-hot' in module 'DecodeSet'
+WARNING: [Synth 8-12595] Onehot encoded FSM with state register 'CS_reg' is not having reset. This may cause incorrect behavior. User should consider using FSM_SAFE_STATE attribute on the register
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_NS_reg' [D:/FrodoKEM_git/SRC/DecodeSet.v:74]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_NS_reg' [D:/FrodoKEM_git/SRC/EncodeSet.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_NS_reg' [D:/FrodoKEM_git/SRC/EncodeSet.v:57]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 RECEIVE |                              001 |                               00
+                  OUTPUT |                              010 |                               01
+                   CLEAR |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'CS_reg' using encoding 'one-hot' in module 'EncodeSet'
+WARNING: [Synth 8-12595] Onehot encoded FSM with state register 'CS_reg' is not having reset. This may cause incorrect behavior. User should consider using FSM_SAFE_STATE attribute on the register
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_NS_reg' [D:/FrodoKEM_git/SRC/EncodeSet.v:57]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                         00000010 |                              000
+                   START |                         10000000 |                              001
+                    LOAD |                         00000100 |                              010
+                   BUFF0 |                         01000000 |                              011
+                    ADDR |                         00100000 |                              100
+                    BUFF |                         00010000 |                              101
+                     RUN |                         00001000 |                              110
+                    DONE |                         00000001 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'CS_reg' using encoding 'one-hot' in module 'instDecoder'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    WAIT |                  000000010000000 |                             0000
+                  DECODE |                  000100000000000 |                             0001
+                    PACK |                  000000001000000 |                             0010
+                  UNPACK |                  000000000000001 |                             0011
+                  ABS448 |                  000000000000100 |                             0100
+                     ABS |                  000000000010000 |                             0101
+                     RUN |                  000000000001000 |                             0110
+                  MAT448 |                  010000000000000 |                             1001
+                   MAT64 |                  100000000000000 |                             1000
+                  MATEpp |                  000010000000000 |                             1010
+                    MAC0 |                  000001000000000 |                             1011
+                    BUFF |                  000000000100000 |                             1101
+                     SQZ |                  001000000000000 |                             0111
+                    MAC1 |                  000000100000000 |                             1100
+                    DONE |                  000000000000010 |                             1111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'substate_reg' using encoding 'one-hot' in module 'control'
+WARNING: [Synth 8-327] inferring latch for variable 'valid_reg' [D:/FrodoKEM_git/SRC/Frodo_top.v:338]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1492.906 ; gain = 733.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   21 Bit       Adders := 1     
+	   2 Input   20 Bit       Adders := 2     
+	   2 Input   19 Bit       Adders := 3     
+	   2 Input   18 Bit       Adders := 7     
+	   2 Input   17 Bit       Adders := 14    
+	   2 Input   16 Bit       Adders := 9     
+	   3 Input   16 Bit       Adders := 4     
+	   2 Input   12 Bit       Adders := 6     
+	   3 Input   12 Bit       Adders := 6     
+	   2 Input   10 Bit       Adders := 1     
+	   3 Input    9 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 4     
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 6     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 5     
+	  13 Input    5 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 11    
+	   2 Input    3 Bit       Adders := 13    
+	   2 Input    2 Bit       Adders := 7     
++---XORs : 
+	   2 Input   1344 Bit         XORs := 1     
+	   2 Input   1088 Bit         XORs := 1     
+	   5 Input     64 Bit         XORs := 5     
+	   3 Input     64 Bit         XORs := 26    
+	   2 Input     64 Bit         XORs := 24    
++---Registers : 
+	             1600 Bit    Registers := 1     
+	             1344 Bit    Registers := 1     
+	              448 Bit    Registers := 2     
+	              256 Bit    Registers := 2     
+	              128 Bit    Registers := 1     
+	              120 Bit    Registers := 1     
+	               80 Bit    Registers := 1     
+	               64 Bit    Registers := 5     
+	               60 Bit    Registers := 1     
+	               36 Bit    Registers := 1     
+	               21 Bit    Registers := 1     
+	               20 Bit    Registers := 2     
+	               19 Bit    Registers := 4     
+	               18 Bit    Registers := 7     
+	               17 Bit    Registers := 14    
+	               16 Bit    Registers := 29    
+	               12 Bit    Registers := 17    
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 6     
+	                8 Bit    Registers := 8     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 12    
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 55    
++---Muxes : 
+	   2 Input 1600 Bit        Muxes := 4     
+	   2 Input 1344 Bit        Muxes := 4     
+	   5 Input 1344 Bit        Muxes := 1     
+	   2 Input  448 Bit        Muxes := 5     
+	   7 Input  448 Bit        Muxes := 1     
+	   4 Input  256 Bit        Muxes := 2     
+	   3 Input  256 Bit        Muxes := 2     
+	   2 Input   80 Bit        Muxes := 1     
+	   3 Input   64 Bit        Muxes := 3     
+	   4 Input   64 Bit        Muxes := 5     
+	   2 Input   64 Bit        Muxes := 10    
+	   2 Input   60 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 5     
+	   4 Input   16 Bit        Muxes := 1     
+	  52 Input   15 Bit        Muxes := 1     
+	   4 Input   15 Bit        Muxes := 12    
+	   2 Input   12 Bit        Muxes := 23    
+	   2 Input   10 Bit        Muxes := 2     
+	   5 Input    9 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 4     
+	   5 Input    8 Bit        Muxes := 4     
+	   3 Input    8 Bit        Muxes := 5     
+	   2 Input    8 Bit        Muxes := 12    
+	   8 Input    8 Bit        Muxes := 1     
+	   4 Input    7 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 17    
+	   5 Input    5 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 16    
+	  13 Input    4 Bit        Muxes := 2     
+	   5 Input    4 Bit        Muxes := 2     
+	  15 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 18    
+	   5 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 7     
+	   4 Input    3 Bit        Muxes := 2     
+	   8 Input    3 Bit        Muxes := 4     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 10    
+	   5 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	  11 Input    2 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 81    
+	   5 Input    1 Bit        Muxes := 16    
+	   3 Input    1 Bit        Muxes := 20    
+	   4 Input    1 Bit        Muxes := 9     
+	  12 Input    1 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 2     
+	  11 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP u_MatrixMulAddSet/amulbaddc[0], operation Mode is: C+A*B.
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[0] is absorbed into DSP u_MatrixMulAddSet/amulbaddc[0].
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[0]0 is absorbed into DSP u_MatrixMulAddSet/amulbaddc[0].
+DSP Report: Generating DSP u_MatrixMulAddSet/amulbaddc[1], operation Mode is: C+A*B.
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[1] is absorbed into DSP u_MatrixMulAddSet/amulbaddc[1].
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[1]0 is absorbed into DSP u_MatrixMulAddSet/amulbaddc[1].
+DSP Report: Generating DSP u_MatrixMulAddSet/amulbaddc[2], operation Mode is: C+A*B.
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[2] is absorbed into DSP u_MatrixMulAddSet/amulbaddc[2].
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[2]0 is absorbed into DSP u_MatrixMulAddSet/amulbaddc[2].
+DSP Report: Generating DSP u_MatrixMulAddSet/amulbaddc[3], operation Mode is: C+A*B.
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[3] is absorbed into DSP u_MatrixMulAddSet/amulbaddc[3].
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[3]0 is absorbed into DSP u_MatrixMulAddSet/amulbaddc[3].
+DSP Report: Generating DSP u_MatrixMulAddSet/amulbaddc[4], operation Mode is: C+A*B.
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[4] is absorbed into DSP u_MatrixMulAddSet/amulbaddc[4].
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[4]0 is absorbed into DSP u_MatrixMulAddSet/amulbaddc[4].
+DSP Report: Generating DSP u_MatrixMulAddSet/amulbaddc[5], operation Mode is: C+A*B.
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[5] is absorbed into DSP u_MatrixMulAddSet/amulbaddc[5].
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[5]0 is absorbed into DSP u_MatrixMulAddSet/amulbaddc[5].
+DSP Report: Generating DSP u_MatrixMulAddSet/amulbaddc[6], operation Mode is: C+A*B.
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[6] is absorbed into DSP u_MatrixMulAddSet/amulbaddc[6].
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[6]0 is absorbed into DSP u_MatrixMulAddSet/amulbaddc[6].
+DSP Report: Generating DSP u_MatrixMulAddSet/amulbaddc[7], operation Mode is: C+A*B.
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[7] is absorbed into DSP u_MatrixMulAddSet/amulbaddc[7].
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[7]0 is absorbed into DSP u_MatrixMulAddSet/amulbaddc[7].
+DSP Report: Generating DSP u_MatrixMulAddSet/amulbaddc[8], operation Mode is: C+A*B.
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[8] is absorbed into DSP u_MatrixMulAddSet/amulbaddc[8].
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[8]0 is absorbed into DSP u_MatrixMulAddSet/amulbaddc[8].
+DSP Report: Generating DSP u_MatrixMulAddSet/amulbaddc[9], operation Mode is: C+A*B.
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[9] is absorbed into DSP u_MatrixMulAddSet/amulbaddc[9].
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[9]0 is absorbed into DSP u_MatrixMulAddSet/amulbaddc[9].
+DSP Report: Generating DSP u_MatrixMulAddSet/amulbaddc[10], operation Mode is: C+A*B.
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[10] is absorbed into DSP u_MatrixMulAddSet/amulbaddc[10].
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[10]0 is absorbed into DSP u_MatrixMulAddSet/amulbaddc[10].
+DSP Report: Generating DSP u_MatrixMulAddSet/amulbaddc[11], operation Mode is: C+A*B.
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[11] is absorbed into DSP u_MatrixMulAddSet/amulbaddc[11].
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[11]0 is absorbed into DSP u_MatrixMulAddSet/amulbaddc[11].
+DSP Report: Generating DSP u_MatrixMulAddSet/amulbaddc[12], operation Mode is: C+A*B.
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[12] is absorbed into DSP u_MatrixMulAddSet/amulbaddc[12].
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[12]0 is absorbed into DSP u_MatrixMulAddSet/amulbaddc[12].
+DSP Report: Generating DSP u_MatrixMulAddSet/amulbaddc[13], operation Mode is: C+A*B.
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[13] is absorbed into DSP u_MatrixMulAddSet/amulbaddc[13].
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[13]0 is absorbed into DSP u_MatrixMulAddSet/amulbaddc[13].
+DSP Report: Generating DSP u_MatrixMulAddSet/amulbaddc[14], operation Mode is: C+A*B.
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[14] is absorbed into DSP u_MatrixMulAddSet/amulbaddc[14].
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[14]0 is absorbed into DSP u_MatrixMulAddSet/amulbaddc[14].
+DSP Report: Generating DSP u_MatrixMulAddSet/amulbaddc[15], operation Mode is: C+A*B.
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[15] is absorbed into DSP u_MatrixMulAddSet/amulbaddc[15].
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[15]0 is absorbed into DSP u_MatrixMulAddSet/amulbaddc[15].
+DSP Report: Generating DSP u_MatrixMulAddSet/amulbaddc[16], operation Mode is: C+A*B.
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[16] is absorbed into DSP u_MatrixMulAddSet/amulbaddc[16].
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[16]0 is absorbed into DSP u_MatrixMulAddSet/amulbaddc[16].
+DSP Report: Generating DSP u_MatrixMulAddSet/amulbaddc[17], operation Mode is: C+A*B.
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[17] is absorbed into DSP u_MatrixMulAddSet/amulbaddc[17].
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[17]0 is absorbed into DSP u_MatrixMulAddSet/amulbaddc[17].
+DSP Report: Generating DSP u_MatrixMulAddSet/amulbaddc[18], operation Mode is: C+A*B.
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[18] is absorbed into DSP u_MatrixMulAddSet/amulbaddc[18].
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[18]0 is absorbed into DSP u_MatrixMulAddSet/amulbaddc[18].
+DSP Report: Generating DSP u_MatrixMulAddSet/amulbaddc[19], operation Mode is: C+A*B.
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[19] is absorbed into DSP u_MatrixMulAddSet/amulbaddc[19].
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[19]0 is absorbed into DSP u_MatrixMulAddSet/amulbaddc[19].
+DSP Report: Generating DSP u_MatrixMulAddSet/amulbaddc[20], operation Mode is: C+A*B.
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[20] is absorbed into DSP u_MatrixMulAddSet/amulbaddc[20].
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[20]0 is absorbed into DSP u_MatrixMulAddSet/amulbaddc[20].
+DSP Report: Generating DSP u_MatrixMulAddSet/amulbaddc[21], operation Mode is: C+A*B.
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[21] is absorbed into DSP u_MatrixMulAddSet/amulbaddc[21].
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[21]0 is absorbed into DSP u_MatrixMulAddSet/amulbaddc[21].
+DSP Report: Generating DSP u_MatrixMulAddSet/amulbaddc[22], operation Mode is: C+A*B.
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[22] is absorbed into DSP u_MatrixMulAddSet/amulbaddc[22].
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[22]0 is absorbed into DSP u_MatrixMulAddSet/amulbaddc[22].
+DSP Report: Generating DSP u_MatrixMulAddSet/amulbaddc[23], operation Mode is: C+A*B.
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[23] is absorbed into DSP u_MatrixMulAddSet/amulbaddc[23].
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[23]0 is absorbed into DSP u_MatrixMulAddSet/amulbaddc[23].
+DSP Report: Generating DSP u_MatrixMulAddSet/amulbaddc[24], operation Mode is: C+A*B.
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[24] is absorbed into DSP u_MatrixMulAddSet/amulbaddc[24].
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[24]0 is absorbed into DSP u_MatrixMulAddSet/amulbaddc[24].
+DSP Report: Generating DSP u_MatrixMulAddSet/amulbaddc[25], operation Mode is: C+A*B.
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[25] is absorbed into DSP u_MatrixMulAddSet/amulbaddc[25].
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[25]0 is absorbed into DSP u_MatrixMulAddSet/amulbaddc[25].
+DSP Report: Generating DSP u_MatrixMulAddSet/amulbaddc[26], operation Mode is: C+A*B.
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[26] is absorbed into DSP u_MatrixMulAddSet/amulbaddc[26].
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[26]0 is absorbed into DSP u_MatrixMulAddSet/amulbaddc[26].
+DSP Report: Generating DSP u_MatrixMulAddSet/amulbaddc[27], operation Mode is: C+A*B.
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[27] is absorbed into DSP u_MatrixMulAddSet/amulbaddc[27].
+DSP Report: operator u_MatrixMulAddSet/amulbaddc[27]0 is absorbed into DSP u_MatrixMulAddSet/amulbaddc[27].
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:01:28 . Memory (MB): peak = 1964.922 ; gain = 1205.152
+---------------------------------------------------------------------------------
+ Sort Area is Frodo_top__GB0 u_MatrixMulAddSet/amulbaddc[0]_1d : 0 0 : 1993 1993 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 u_MatrixMulAddSet/amulbaddc[10]_28 : 0 0 : 1993 1993 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 u_MatrixMulAddSet/amulbaddc[11]_29 : 0 0 : 1993 1993 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 u_MatrixMulAddSet/amulbaddc[12]_2a : 0 0 : 1993 1993 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 u_MatrixMulAddSet/amulbaddc[13]_2b : 0 0 : 1993 1993 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 u_MatrixMulAddSet/amulbaddc[14]_2c : 0 0 : 1993 1993 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 u_MatrixMulAddSet/amulbaddc[15]_2d : 0 0 : 1993 1993 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 u_MatrixMulAddSet/amulbaddc[16]_2e : 0 0 : 1993 1993 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 u_MatrixMulAddSet/amulbaddc[17]_2f : 0 0 : 1993 1993 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 u_MatrixMulAddSet/amulbaddc[18]_30 : 0 0 : 1993 1993 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 u_MatrixMulAddSet/amulbaddc[19]_31 : 0 0 : 1993 1993 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 u_MatrixMulAddSet/amulbaddc[1]_1f : 0 0 : 1993 1993 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 u_MatrixMulAddSet/amulbaddc[20]_32 : 0 0 : 1993 1993 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 u_MatrixMulAddSet/amulbaddc[21]_33 : 0 0 : 1993 1993 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 u_MatrixMulAddSet/amulbaddc[22]_34 : 0 0 : 1993 1993 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 u_MatrixMulAddSet/amulbaddc[23]_35 : 0 0 : 1993 1993 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 u_MatrixMulAddSet/amulbaddc[24]_36 : 0 0 : 1993 1993 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 u_MatrixMulAddSet/amulbaddc[25]_37 : 0 0 : 1993 1993 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 u_MatrixMulAddSet/amulbaddc[26]_38 : 0 0 : 1993 1993 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 u_MatrixMulAddSet/amulbaddc[27]_39 : 0 0 : 1993 1993 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 u_MatrixMulAddSet/amulbaddc[2]_20 : 0 0 : 1993 1993 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 u_MatrixMulAddSet/amulbaddc[3]_21 : 0 0 : 1993 1993 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 u_MatrixMulAddSet/amulbaddc[4]_22 : 0 0 : 1993 1993 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 u_MatrixMulAddSet/amulbaddc[5]_23 : 0 0 : 1993 1993 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 u_MatrixMulAddSet/amulbaddc[6]_24 : 0 0 : 1993 1993 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 u_MatrixMulAddSet/amulbaddc[7]_25 : 0 0 : 1993 1993 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 u_MatrixMulAddSet/amulbaddc[8]_26 : 0 0 : 1993 1993 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 u_MatrixMulAddSet/amulbaddc[9]_27 : 0 0 : 1993 1993 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 p_0_out_0 : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 p_0_out_10 : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 p_0_out_11 : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 p_0_out_12 : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 p_0_out_13 : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 p_0_out_14 : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 p_0_out_15 : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 p_0_out_16 : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 p_0_out_17 : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 p_0_out_18 : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 p_0_out_19 : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 p_0_out_1a : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 p_0_out_1b : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 p_0_out_1c : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 p_0_out_2 : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 p_0_out_3 : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 p_0_out_4 : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 p_0_out_5 : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 p_0_out_6 : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 p_0_out_7 : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 p_0_out_8 : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 p_0_out_9 : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 p_0_out_a : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 p_0_out_b : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 p_0_out_c : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 p_0_out_d : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 p_0_out_e : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is Frodo_top__GB0 p_0_out_f : 0 0 : 1946 1946 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|MatrixMACSet    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatrixMACSet    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatrixMACSet    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatrixMACSet    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatrixMACSet    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatrixMACSet    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatrixMACSet    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatrixMACSet    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatrixMACSet    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatrixMACSet    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatrixMACSet    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatrixMACSet    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatrixMACSet    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatrixMACSet    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatrixMACSet    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatrixMACSet    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatrixMACSet    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatrixMACSet    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatrixMACSet    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatrixMACSet    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatrixMACSet    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatrixMACSet    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatrixMACSet    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatrixMACSet    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatrixMACSet    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatrixMACSet    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatrixMACSet    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatrixMACSet    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatrixMulAddSet | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MatrixMulAddSet | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MatrixMulAddSet | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MatrixMulAddSet | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MatrixMulAddSet | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MatrixMulAddSet | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MatrixMulAddSet | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MatrixMulAddSet | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MatrixMulAddSet | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MatrixMulAddSet | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MatrixMulAddSet | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MatrixMulAddSet | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MatrixMulAddSet | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MatrixMulAddSet | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MatrixMulAddSet | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MatrixMulAddSet | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MatrixMulAddSet | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MatrixMulAddSet | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MatrixMulAddSet | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MatrixMulAddSet | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MatrixMulAddSet | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MatrixMulAddSet | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MatrixMulAddSet | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MatrixMulAddSet | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MatrixMulAddSet | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MatrixMulAddSet | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MatrixMulAddSet | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MatrixMulAddSet | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:34 ; elapsed = 00:01:36 . Memory (MB): peak = 1964.922 ; gain = 1205.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:27 ; elapsed = 00:02:29 . Memory (MB): peak = 1971.133 ; gain = 1211.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:37 ; elapsed = 00:02:39 . Memory (MB): peak = 2276.328 ; gain = 1516.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:43 ; elapsed = 00:02:45 . Memory (MB): peak = 2276.328 ; gain = 1516.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:43 ; elapsed = 00:02:46 . Memory (MB): peak = 2276.328 ; gain = 1516.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:45 ; elapsed = 00:02:47 . Memory (MB): peak = 2276.328 ; gain = 1516.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:45 ; elapsed = 00:02:47 . Memory (MB): peak = 2276.328 ; gain = 1516.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:46 ; elapsed = 00:02:48 . Memory (MB): peak = 2276.328 ; gain = 1516.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:46 ; elapsed = 00:02:48 . Memory (MB): peak = 2276.328 ; gain = 1516.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|MatrixMACSet    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MatrixMACSet    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MatrixMACSet    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MatrixMACSet    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MatrixMACSet    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MatrixMACSet    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MatrixMACSet    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MatrixMACSet    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MatrixMACSet    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MatrixMACSet    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MatrixMACSet    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MatrixMACSet    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MatrixMACSet    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MatrixMACSet    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MatrixMACSet    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MatrixMACSet    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MatrixMACSet    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MatrixMACSet    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MatrixMACSet    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MatrixMACSet    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MatrixMACSet    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MatrixMACSet    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MatrixMACSet    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MatrixMACSet    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MatrixMACSet    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MatrixMACSet    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MatrixMACSet    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MatrixMACSet    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MatrixMulAddSet | Dynamic     | -      | -      | -      | -      | 16     | -    | -    | -    | -    | -     | 0    | 1    | 
+|MatrixMulAddSet | Dynamic     | -      | -      | -      | -      | 16     | -    | -    | -    | -    | -     | 0    | 1    | 
+|MatrixMulAddSet | Dynamic     | -      | -      | -      | -      | 16     | -    | -    | -    | -    | -     | 0    | 1    | 
+|MatrixMulAddSet | Dynamic     | -      | -      | -      | -      | 16     | -    | -    | -    | -    | -     | 0    | 1    | 
+|MatrixMulAddSet | Dynamic     | -      | -      | -      | -      | 16     | -    | -    | -    | -    | -     | 0    | 1    | 
+|MatrixMulAddSet | Dynamic     | -      | -      | -      | -      | 16     | -    | -    | -    | -    | -     | 0    | 1    | 
+|MatrixMulAddSet | Dynamic     | -      | -      | -      | -      | 16     | -    | -    | -    | -    | -     | 0    | 1    | 
+|MatrixMulAddSet | Dynamic     | -      | -      | -      | -      | 16     | -    | -    | -    | -    | -     | 0    | 1    | 
+|MatrixMulAddSet | Dynamic     | -      | -      | -      | -      | 16     | -    | -    | -    | -    | -     | 0    | 1    | 
+|MatrixMulAddSet | Dynamic     | -      | -      | -      | -      | 16     | -    | -    | -    | -    | -     | 0    | 1    | 
+|MatrixMulAddSet | Dynamic     | -      | -      | -      | -      | 16     | -    | -    | -    | -    | -     | 0    | 1    | 
+|MatrixMulAddSet | Dynamic     | -      | -      | -      | -      | 16     | -    | -    | -    | -    | -     | 0    | 1    | 
+|MatrixMulAddSet | Dynamic     | -      | -      | -      | -      | 16     | -    | -    | -    | -    | -     | 0    | 1    | 
+|MatrixMulAddSet | Dynamic     | -      | -      | -      | -      | 16     | -    | -    | -    | -    | -     | 0    | 1    | 
+|MatrixMulAddSet | Dynamic     | -      | -      | -      | -      | 16     | -    | -    | -    | -    | -     | 0    | 1    | 
+|MatrixMulAddSet | Dynamic     | -      | -      | -      | -      | 16     | -    | -    | -    | -    | -     | 0    | 1    | 
+|MatrixMulAddSet | Dynamic     | -      | -      | -      | -      | 16     | -    | -    | -    | -    | -     | 0    | 1    | 
+|MatrixMulAddSet | Dynamic     | -      | -      | -      | -      | 16     | -    | -    | -    | -    | -     | 0    | 1    | 
+|MatrixMulAddSet | Dynamic     | -      | -      | -      | -      | 16     | -    | -    | -    | -    | -     | 0    | 1    | 
+|MatrixMulAddSet | Dynamic     | -      | -      | -      | -      | 16     | -    | -    | -    | -    | -     | 0    | 1    | 
+|MatrixMulAddSet | Dynamic     | -      | -      | -      | -      | 16     | -    | -    | -    | -    | -     | 0    | 1    | 
+|MatrixMulAddSet | Dynamic     | -      | -      | -      | -      | 16     | -    | -    | -    | -    | -     | 0    | 1    | 
+|MatrixMulAddSet | Dynamic     | -      | -      | -      | -      | 16     | -    | -    | -    | -    | -     | 0    | 1    | 
+|MatrixMulAddSet | Dynamic     | -      | -      | -      | -      | 16     | -    | -    | -    | -    | -     | 0    | 1    | 
+|MatrixMulAddSet | (C+A*B)'    | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|MatrixMulAddSet | (C+A*B)'    | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|MatrixMulAddSet | (C+A*B)'    | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|MatrixMulAddSet | (C+A*B)'    | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |RAM448        |         1|
+|2     |RAM64b        |         1|
+|3     |RAM64a        |         1|
+|4     |ADDRBASE_ROM  |         1|
+|5     |INSTROM       |         1|
+|6     |ila_0         |         1|
+|7     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |ADDRBASE_ROM |     1|
+|2     |INSTROM      |     1|
+|3     |RAM448       |     1|
+|4     |RAM64a       |     1|
+|5     |RAM64b       |     1|
+|6     |clk_wiz      |     1|
+|7     |ila          |     1|
+|8     |BUFG         |     1|
+|9     |CARRY4       |   276|
+|10    |DSP48E1      |    56|
+|12    |LUT1         |    15|
+|13    |LUT2         |  2634|
+|14    |LUT3         |  1729|
+|15    |LUT4         |  2186|
+|16    |LUT5         |  2491|
+|17    |LUT6         |  6685|
+|18    |MUXF7        |     3|
+|19    |MUXF8        |     1|
+|20    |FDCE         |  5648|
+|21    |FDPE         |    24|
+|22    |FDRE         |    25|
+|23    |LD           |    11|
+|24    |LDP          |     1|
+|25    |IBUF         |     3|
+|26    |OBUF         |     1|
++------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:46 ; elapsed = 00:02:48 . Memory (MB): peak = 2276.328 ; gain = 1516.559
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:34 ; elapsed = 00:02:44 . Memory (MB): peak = 2276.328 ; gain = 1434.578
+Synthesis Optimization Complete : Time (s): cpu = 00:02:46 ; elapsed = 00:02:49 . Memory (MB): peak = 2276.328 ; gain = 1516.559
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.287 . Memory (MB): peak = 2276.328 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 348 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2276.328 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  LD => LDCE: 11 instances
+  LDP => LDPE: 1 instance 
+
+Synth Design complete | Checksum: ebefe467
+INFO: [Common 17-83] Releasing license: Synthesis
+113 Infos, 53 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:54 ; elapsed = 00:02:59 . Memory (MB): peak = 2276.328 ; gain = 1705.293
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2276.328 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/FrodoKEM_git/project_1/project_1.runs/synth_1/TOP.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file TOP_utilization_synth.rpt -pb TOP_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 14 17:47:22 2026...

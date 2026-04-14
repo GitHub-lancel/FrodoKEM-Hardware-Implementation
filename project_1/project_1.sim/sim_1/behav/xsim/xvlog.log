@@ -1,0 +1,44 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKEM_git/SRC/AddrGenUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AddrGenUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKEM_git/SRC/DecodeSet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DecodeSet
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKEM_git/SRC/EncodeSet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EncodeSet
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKEM_git/SRC/InstDecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instDecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKEM_git/SRC/Keccak.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Keccak
+INFO: [VRFC 10-311] analyzing module KeccakF1600_StatePermute
+INFO: [VRFC 10-311] analyzing module Rcont
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKEM_git/SRC/MatrixAddSet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MatrixAddSet
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKEM_git/SRC/MatrixMACSet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MatrixMACSet
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKEM_git/SRC/MatrixMulAddSet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MatrixMulAddSet
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKEM_git/SRC/MatrixSubSet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MatrixSubSet
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKEM_git/SRC/Msg_Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Msg_Processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKEM_git/SRC/PackSet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PackSet
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKEM_git/SRC/RAM _Arbitration.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_Arbitration
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKEM_git/SRC/SHAKE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SHAKE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKEM_git/SRC/SampleMatrixSet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SampleMatrixSet
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKEM_git/SRC/UnpackSet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UnpackSet
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKEM_git/SRC/bidirectional_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bidirectional_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKEM_git/SRC/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+WARNING: [VRFC 10-3380] identifier 'sqzout64_en' is used before its declaration [D:/FrodoKEM_git/SRC/control.v:122]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKEM_git/SRC/roundmod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module roundmod
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKEM_git/SRC/Frodo_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Frodo_top
+WARNING: [VRFC 10-3380] identifier 'clk' is used before its declaration [D:/FrodoKEM_git/SRC/Frodo_top.v:20]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKEM_git/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

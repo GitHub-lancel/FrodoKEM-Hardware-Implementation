@@ -1,0 +1,278 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Tue Apr 14 17:30:26 2026
+# Process ID         : 59036
+# Current directory  : D:/FrodoKEM_git/project_1
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent47620 D:\FrodoKEM_git\project_1\project_1.xpr
+# Log file           : D:/FrodoKEM_git/project_1/vivado.log
+# Journal file       : D:/FrodoKEM_git/project_1\vivado.jou
+# Running On         : DESKTOP-KKLUIKL
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : AMD Ryzen 7 5800H with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 17024 MB
+# Swap memory        : 14495 MB
+# Total Virtual      : 31520 MB
+# Available Virtual  : 6530 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/FrodoKEM_git/project_1/project_1.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.1\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:v80:part0:1.0 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\v80\1.0\board.xml as part xcv80-lsva4737-2mhp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\2.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.4 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.4\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.3 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.0\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.1\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.2\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.0 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.0\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.1\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.2 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.2\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\2.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.3 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.3\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.0\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.1\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.2\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.0\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.1\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.2\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208ld\production\2.0\board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216ld\production\2.0\board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670ld\1.0\board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.1\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:v80:part0:1.0 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\v80\1.0\board.xml as part xcv80-lsva4737-2mhp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\2.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.4 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.4\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.3 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.0\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.1\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.2\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.0 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.0\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.1\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.2 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.2\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\2.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.3 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.3\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.0\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.1\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.2\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.0\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.1\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.2\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208ld\production\2.0\board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216ld\production\2.0\board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Xlinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670ld\1.0\board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Project 1-5713] Board part '' set for the project  is not found. BoardPart property will be unset. Please select board from latest repo build 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xlinx/2025.1/Vivado/data/ip'.
+INFO: [Device 21-403] Loading part xc7a35tfgg484-2
+open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:27 . Memory (MB): peak = 1969.285 ; gain = 490.574
+update_compile_order -fileset sources_1
+reset_run synth_1
+reset_run impl_1
+reset_run ADDRBASE_ROM_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/FrodoKEM_git/project_1/project_1.runs/ADDRBASE_ROM_synth_1
+
+reset_run INSTROM_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/FrodoKEM_git/project_1/project_1.runs/INSTROM_synth_1
+
+reset_run clk_wiz_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/FrodoKEM_git/project_1/project_1.runs/clk_wiz_0_synth_1
+
+reset_run RAM64a_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/FrodoKEM_git/project_1/project_1.runs/RAM64a_synth_1
+
+reset_run RAM64b_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/FrodoKEM_git/project_1/project_1.runs/RAM64b_synth_1
+
+reset_run RAM448_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/FrodoKEM_git/project_1/project_1.runs/RAM448_synth_1
+
+launch_runs synth_1 -jobs 8
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ADDRBASE_ROM'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'INSTROM'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'RAM64a'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'RAM64b'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'RAM448'...
+[Tue Apr 14 17:33:24 2026] Launched ADDRBASE_ROM_synth_1, INSTROM_synth_1, clk_wiz_0_synth_1, RAM64a_synth_1, RAM64b_synth_1, RAM448_synth_1...
+Run output will be captured here:
+ADDRBASE_ROM_synth_1: D:/FrodoKEM_git/project_1/project_1.runs/ADDRBASE_ROM_synth_1/runme.log
+INSTROM_synth_1: D:/FrodoKEM_git/project_1/project_1.runs/INSTROM_synth_1/runme.log
+clk_wiz_0_synth_1: D:/FrodoKEM_git/project_1/project_1.runs/clk_wiz_0_synth_1/runme.log
+RAM64a_synth_1: D:/FrodoKEM_git/project_1/project_1.runs/RAM64a_synth_1/runme.log
+RAM64b_synth_1: D:/FrodoKEM_git/project_1/project_1.runs/RAM64b_synth_1/runme.log
+RAM448_synth_1: D:/FrodoKEM_git/project_1/project_1.runs/RAM448_synth_1/runme.log
+[Tue Apr 14 17:33:24 2026] Launched synth_1...
+Run output will be captured here: D:/FrodoKEM_git/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Tue Apr 14 17:38:20 2026] Launched impl_1...
+Run output will be captured here: D:/FrodoKEM_git/project_1/project_1.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tfgg484-2
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+INFO: [Project 1-454] Reading design checkpoint 'd:/FrodoKEM_git/project_1/project_1.gen/sources_1/ip/ila_0/ila_0.dcp' for cell 'ila'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FrodoKEM.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'u_Frodo_top/instance_name'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FrodoKEM.gen/sources_1/ip/RAM64a/RAM64a.dcp' for cell 'u_Frodo_top/ram64a'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FrodoKEM.gen/sources_1/ip/RAM64b/RAM64b.dcp' for cell 'u_Frodo_top/ram64b'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FrodoKEM.gen/sources_1/ip/RAM448/RAM448.dcp' for cell 'u_Frodo_top/uRAM448'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FrodoKEM.gen/sources_1/ip/ADDRBASE_ROM/ADDRBASE_ROM.dcp' for cell 'u_Frodo_top/u_control/u_instDecoder/addrom'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FrodoKEM.gen/sources_1/ip/INSTROM/INSTROM.dcp' for cell 'u_Frodo_top/u_control/u_instDecoder/your_instance_name'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.342 . Memory (MB): peak = 2046.816 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 455 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+WARNING: [Opt 31-35] Removing redundant IBUF, u_Frodo_top/instance_name/inst/clkin1_ibufg, from the path connected to top-level port: clk_i 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'u_Frodo_top/instance_name/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+INFO: [Chipscope 16-324] Core: ila UUID: 901a5f55-8b29-50a8-8131-f43987f6be78 
+Parsing XDC File [d:/FrodoKEM.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_Frodo_top/instance_name/inst'
+Finished Parsing XDC File [d:/FrodoKEM.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_Frodo_top/instance_name/inst'
+Parsing XDC File [d:/FrodoKEM.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_Frodo_top/instance_name/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/FrodoKEM.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [d:/FrodoKEM.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:54]
+Finished Parsing XDC File [d:/FrodoKEM.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_Frodo_top/instance_name/inst'
+Parsing XDC File [d:/FrodoKEM_git/project_1/project_1.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [d:/FrodoKEM_git/project_1/project_1.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc:31]
+Finished Parsing XDC File [d:/FrodoKEM_git/project_1/project_1.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila/inst'
+Parsing XDC File [d:/FrodoKEM_git/project_1/project_1.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [d:/FrodoKEM_git/project_1/project_1.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc:108]
+Finished Parsing XDC File [d:/FrodoKEM_git/project_1/project_1.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila/inst'
+Parsing XDC File [D:/FrodoKEM_git/SRC/clk.xdc]
+Finished Parsing XDC File [D:/FrodoKEM_git/SRC/clk.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 2 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2753.672 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 64 instances
+
+open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 2965.543 ; gain = 978.223
+report_utilization -name utilization_1
+get_package_pins W19
+W19
+report_property [get_package_pins W19]
+Property                Type    Read-only  Value
+BANK                    string  true       14
+BUFIO_2_REGION          string  true       LB
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       W20
+IS_BONDED               bool    true       1
+IS_CLK_CAPABLE          bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       1
+IS_GLOBAL_CLK           bool    true       0
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       1
+IS_USED                 bool    true       1
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       88563
+MIN_DELAY               int     true       87682
+NAME                    string  true       W19
+PIN_FUNC                enum    true       IO_L12P_T1_MRCC_14
+PIN_FUNC_COUNT          int     true       2
+PKGPIN_BYTEGROUP_INDEX  int     true       0
+PKGPIN_NIBBLE_INDEX     int     true       0
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/FrodoKEM_git/project_1/project_1.srcs/utils_1/imports/synth_1/Frodo_top.dcp with file D:/FrodoKEM_git/project_1/project_1.runs/synth_1/TOP.dcp
+launch_runs synth_1 -jobs 8
+[Tue Apr 14 17:44:05 2026] Launched synth_1...
+Run output will be captured here: D:/FrodoKEM_git/project_1/project_1.runs/synth_1/runme.log
+close_design
+launch_runs impl_1 -jobs 8
+[Tue Apr 14 17:47:49 2026] Launched impl_1...
+Run output will be captured here: D:/FrodoKEM_git/project_1/project_1.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tfgg484-2
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+INFO: [Project 1-454] Reading design checkpoint 'd:/FrodoKEM_git/project_1/project_1.gen/sources_1/ip/ila_0/ila_0.dcp' for cell 'ila'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FrodoKEM.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'instance_name'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FrodoKEM.gen/sources_1/ip/RAM64a/RAM64a.dcp' for cell 'u_Frodo_top/ram64a'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FrodoKEM.gen/sources_1/ip/RAM64b/RAM64b.dcp' for cell 'u_Frodo_top/ram64b'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FrodoKEM.gen/sources_1/ip/RAM448/RAM448.dcp' for cell 'u_Frodo_top/uRAM448'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'open_run' was cancelled
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.356 . Memory (MB): peak = 3016.109 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 473 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 3016.109 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 3153.445 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 3153.445 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.805 . Memory (MB): peak = 3153.477 ; gain = 0.031
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3153.477 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.336 . Memory (MB): peak = 3164.145 ; gain = 10.668
+Read Physdb Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3164.145 ; gain = 10.699
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3164.145 ; gain = 10.699
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 3164.145 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 70 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 64 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 3208.195 ; gain = 192.086
+open_report: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 3351.141 ; gain = 121.164
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+report_utilization -name utilization_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 14 17:52:35 2026...

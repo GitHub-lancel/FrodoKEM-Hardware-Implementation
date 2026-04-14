@@ -1,0 +1,18 @@
+
+*** Running vivado
+    with args -log RAM64b.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source RAM64b.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Tue Apr 14 17:33:27 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source RAM64b.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 535.215 ; gain = 214.367
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP RAM64b, cache-ID = d9f56be8ffc332f1.
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 14 17:33:48 2026...

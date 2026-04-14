@@ -1,0 +1,14 @@
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xlinx/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Frodo_top_behav xil_defaultlib.Frodo_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2063] Module <clk_wiz_0> not found while processing module instance <instance_name> [D:/FrodoKEM_git/SRC/Frodo_top.v:431]
+ERROR: [VRFC 10-2063] Module <RAM64a> not found while processing module instance <ram64a> [D:/FrodoKEM_git/SRC/Frodo_top.v:562]
+ERROR: [VRFC 10-2063] Module <RAM64b> not found while processing module instance <ram64b> [D:/FrodoKEM_git/SRC/Frodo_top.v:578]
+ERROR: [VRFC 10-2063] Module <RAM448> not found while processing module instance <uRAM448> [D:/FrodoKEM_git/SRC/Frodo_top.v:595]
+ERROR: [VRFC 10-2063] Module <dual_ram_asyn> not found while processing module instance <addrom> [D:/FrodoKEM_git/SRC/InstDecoder.v:565]
+ERROR: [VRFC 10-2063] Module <dual_ram> not found while processing module instance <u_dual_ram> [D:/FrodoKEM_git/SRC/InstDecoder.v:587]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
