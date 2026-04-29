@@ -1,0 +1,54 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Work_prj/Frodokem_2026/SRC/AddrGenUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AddrGenUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Work_prj/Frodokem_2026/SRC/DecodeSet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DecodeSet
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Work_prj/Frodokem_2026/SRC/EncodeSet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EncodeSet
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Work_prj/Frodokem_2026/SRC/Frodo_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Frodo_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Work_prj/Frodokem_2026/SRC/InstDecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instDecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Work_prj/Frodokem_2026/SRC/MatrixAddSet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MatrixAddSet
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Work_prj/Frodokem_2026/SRC/MatrixMACSet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MatrixMACSet
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Work_prj/Frodokem_2026/SRC/MatrixMulAddSet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MatrixMulAddSet
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Work_prj/Frodokem_2026/SRC/MatrixSubSet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MatrixSubSet
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Work_prj/Frodokem_2026/SRC/PackSet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PackSet
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Work_prj/Frodokem_2026/SRC/RAM _Arbitration.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_Arbitration
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Work_prj/Frodokem_2026/SRC/shake.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SHAKE
+WARNING: [VRFC 10-3380] identifier 'CS' is used before its declaration [D:/Work_prj/Frodokem_2026/SRC/shake.v:64]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Work_prj/Frodokem_2026/SRC/SampleMatrixSet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SampleMatrixSet
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Work_prj/Frodokem_2026/SRC/UnpackSet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UnpackSet
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Work_prj/Frodokem_2026/SRC/bidirectional_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bidirectional_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Work_prj/Frodokem_2026/SRC/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+WARNING: [VRFC 10-3248] data object 'maccnt0' is already declared [D:/Work_prj/Frodokem_2026/SRC/control.v:1039]
+WARNING: [VRFC 10-9364] second declaration of 'maccnt0' is ignored [D:/Work_prj/Frodokem_2026/SRC/control.v:1039]
+WARNING: [VRFC 10-3380] identifier 'sqzout64_en' is used before its declaration [D:/Work_prj/Frodokem_2026/SRC/control.v:118]
+WARNING: [VRFC 10-3380] identifier 'fifo64outval' is used before its declaration [D:/Work_prj/Frodokem_2026/SRC/control.v:486]
+WARNING: [VRFC 10-3380] identifier 'pingpangflag' is used before its declaration [D:/Work_prj/Frodokem_2026/SRC/control.v:959]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Work_prj/Frodokem_2026/dram448_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dram448_r
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Work_prj/Frodokem_2026/dram64_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dram64_r
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Work_prj/Frodokem_2026/dual_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dual_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Work_prj/Frodokem_2026/dual_ram_asyn.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dual_ram_asyn
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Work_prj/Frodokem_2026/SRC/roundmod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module roundmod
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Work_prj/Frodokem_2026/SRC/theta.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module theta
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Work_prj/Frodokem_2026/SRC/thopichiiota.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module thopichiiota
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Work_prj/Frodokem_2026/Viprj/FrodoKEM/FrodoKEM.srcs/sim_1/new/TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_Frodo_top

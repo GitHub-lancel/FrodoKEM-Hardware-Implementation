@@ -1,0 +1,64 @@
+EAA0  // 2720 ram64b 写口1       =====  解码M 读
+DAA0  // 2720 ram64b 读口2       =====  解码M 存
+8000  // 0000 ram64a 读口1       =====  打包B  读       //产pkh B读
+E540  // 1344 ram64b 写口1       =====  打包B  存
+4180  // 384  ram448 读口1       =====  打包Bp 读 
+A540  // 1344 ram64a 写口1       =====  打包Bp 存       //打包Bpp 存
+CA90  // 2704 ram64b 读口1       =====  打包C0 读        
+AA80  // 2688 ram64a 写口1       =====  打包C0 存
+4000  // 0000 ram448 读口1       =====  打包Bpp读 
+CA80  // 2688 ram64b 读口1       =====  打包C1 读
+AA90  // 2704 ram64a 写口1       =====  打包C1 存
+C000  // 0000 ram64b 读口1       =====  解包B  读           //产pkh b读
+A000  // 0000 ram64a 写口1       =====  解包B  存
+8A80  // 2688 ram64a 读口1       =====  解包C0 读
+EA90  // 2704 ram64b 写口1       =====  解包C0 存
+8540  // 1344 ram64a 读口1       =====  解包Bp 读
+6180  // 384  ram448 写口1       =====  解包Bp 存
+CAB0  // 2736 ram64b 读口1       =====  产seedse 读pkh
+CAA0  // 2720 ram64b 读口1       =====  产seedse 读u
+CAB4  // 2740 ram64b 读口1       =====  产seedse 读salt
+BAA2  // 2722 ram64a 写口2       =====  产seedse 写seedse
+BAAE  // 2734 ram64a 写口2       =====  产seedse 写k
+8AA0  // 2720 ram64a 读口1       =====  产seeda  读z        //产pkh seeda读
+BAA0  // 2720 ram64a 写口2       =====  产seeda  写seeda
+FAB0  // 2736 ram64b 写口2       =====  产pkh    写pkh
+CAB4  // 2740 ram64b 读口1       =====  产ss     读salt
+8AAE  // 2734 ram64a 读口1       =====  产ss     读k
+BAAA  // 2730 ram64a 写口2       =====  产ss     写ss
+C540  // 1344 ram64b 读口1       =====  产ss     读b'(640enc) //产ss 读b'(640dec)
+4180  // 384  ram448 读口1       =====  产ss     读B'(高级enc) 
+4000  // 0000 ram448 读口1       =====  产ss     读b'(高级dec)
+8A80  // 2688 ram64a 读口1       =====  产ss     读c'(640enc)
+8A90  // 2704 ram64a 读口1       =====  产ss     读c'(640dec)
+CA90  // 2704 ram64b 读口1       =====  产ss     读c'(高级enc)
+CA80  // 2688 ram64b 读口1       =====  产ss     读c'(高级dec)
+8AA2  // 2722 ram64a 读口1       =====  sample0  读seedse
+6000  // 0000 ram448 写口1       =====  sample0  写S
+B000  // 0000 ram64a 写口2       =====  sample0  写E
+F000  // 0000 ram64b 写口2       =====  sample1  写Sp
+6180  // 384  ram448 写口1       =====  sample1  写Ep
+BA90  // 2704 ram64a 写口2       =====  sample1  写Epp
+CAA0  // 2720 ram64b 读口1       =====  sample0  读encode u
+4180  // 384  ram448 读口1       =====  CBS      读Bp
+5000  // 0000 ram448 读口2       =====  CBS      读S
+CA90  // 2704 ram64b 读口1       =====  CBS      读C
+FA90  // 2704 ram64b 写口2       =====  CBS      写结果(无减法)
+FAA0  // 2720 ram64b 写口2       =====  CBS      写结果(减法待用)
+C000  // 0000 ram64b 读口1       =====  ESB      读Sp
+9000  // 0000 ram64a 读口2       =====  ESB      读B !!
+8A90  // 2704 ram64a 读口1       =====  ESB      读E
+FAC0  // 2752 ram64b 写口2       =====  ESB      写结果
+C000  // 0000 ram64b 读口1       =====  SAE      读Sp
+4000  // 0000 ram448 读口1       =====  SAE      读Bp （enc）
+7000  // 0000 ram448 写口2       =====  SAE      写Bp （enc）
+4180  // 384  ram448 读口1       =====  SAE      读Bp （DEC）
+7180  // 384  ram448 写口2       =====  SAE      写Bp （DEC）
+0000  // 缓冲不接线的信号 
+4000  // 0000 ram448 读口1       =====  ASE      读S 
+8000  // 0000 ram64a 读口1       =====  ASE      读E
+B000  // 0000 ram64a 写口2       =====  ASE      写B
+8AAA  // 2730 ram64a 读口1       =====  输ss     读ss
+8A90  // 2704 ram64a 读口1       == SUB          读BS结果
+DA90  // 2704 ram64b 读口2       == SUB          读C矩阵
+EAA0  // 2720 ram64b 写口1       == SUB          结果存储   

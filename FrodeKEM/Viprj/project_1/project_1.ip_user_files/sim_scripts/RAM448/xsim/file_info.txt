@@ -1,0 +1,2 @@
+RAM448.v,verilog,xil_defaultlib,../../../../project_1.gen/sources_1/ip/RAM448/sim/RAM448.v,incdir="../../../../../../../../../Xlinx/2025.1/Vivado/data/rsb/busdef"
+glbl.v,Verilog,xil_defaultlib,glbl.v

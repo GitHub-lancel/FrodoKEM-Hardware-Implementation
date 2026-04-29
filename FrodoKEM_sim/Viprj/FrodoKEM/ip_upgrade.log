@@ -1,0 +1,100 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Mon Apr  6 21:15:12 2026
+| Host         : DESKTOP-KKLUIKL running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'RAM64b'
+
+1. Summary
+----------
+
+SUCCESS in the update of RAM64b (xilinx.com:ip:blk_mem_gen:8.4 (Rev. 11)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Mon Apr  6 21:15:11 2026
+| Host         : DESKTOP-KKLUIKL running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'RAM64a'
+
+1. Summary
+----------
+
+SUCCESS in the update of RAM64a (xilinx.com:ip:blk_mem_gen:8.4 (Rev. 11)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Mon Apr  6 21:15:10 2026
+| Host         : DESKTOP-KKLUIKL running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'RAM448'
+
+1. Summary
+----------
+
+SUCCESS in the update of RAM448 (xilinx.com:ip:blk_mem_gen:8.4 (Rev. 11)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Mon Apr  6 21:15:08 2026
+| Host         : DESKTOP-KKLUIKL running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'INSTROM'
+
+1. Summary
+----------
+
+SUCCESS in the update of INSTROM (xilinx.com:ip:blk_mem_gen:8.4 (Rev. 11)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Mon Apr  6 21:15:07 2026
+| Host         : DESKTOP-KKLUIKL running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ADDRBASE_ROM'
+
+1. Summary
+----------
+
+SUCCESS in the update of ADDRBASE_ROM (xilinx.com:ip:dist_mem_gen:8.0 (Rev. 17)) to current project options.
+

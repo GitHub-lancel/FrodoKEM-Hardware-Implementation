@@ -1,0 +1,7 @@
+Time resolution is 1 ps
+WARNING: Too many words specified in data file D:/Work_prj/Frodokem_2026/TB/RAM64a.hex
+WARNING: Too many words specified in data file D:/Work_prj/Frodokem_2026/TB/RAM64b.hex
+oneinstdone detected at               545000
+mem dumped to D:/Work_prj/Frodokem_2026/TB/RAM64aout.hex at time=565000
+mem dumped to D:/Work_prj/Frodokem_2026/TB/RAM64bout.hex at time=565000
+mem dumped to D:/Work_prj/Frodokem_2026/TB/RAM448out.hex at time=565000

@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sun Apr 26 17:37:20 2026
+# Process ID         : 101824
+# Current directory  : D:/Work_prj/Frodokem_2026/Viprj/FrodoKEM/FrodoKEM.sim/sim_1/behav/xsim
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent98700 D:\Work_prj\Frodokem_2026\Viprj\FrodoKEM\FrodoKEM.sim\sim_1\behav\xsim\tb_Frodo_top_behav.wdb
+# Log file           : D:/Work_prj/Frodokem_2026/Viprj/FrodoKEM/FrodoKEM.sim/sim_1/behav/xsim/vivado.log
+# Journal file       : D:/Work_prj/Frodokem_2026/Viprj/FrodoKEM/FrodoKEM.sim/sim_1/behav/xsim\vivado.jou
+# Running On         : DESKTOP-KKLUIKL
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : AMD Ryzen 7 5800H with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 17024 MB
+# Swap memory        : 13421 MB
+# Total Virtual      : 30446 MB
+# Available Virtual  : 17563 MB
+#-----------------------------------------------------------
+start_gui
+open_wave_database {D:\Work_prj\Frodokem_2026\Viprj\FrodoKEM\FrodoKEM.sim\sim_1\behav\xsim\tb_Frodo_top_behav.wdb}
+close_sim
+close_project
+open_project D:/Work_prj/Frodokem_2026/Viprj/FrodoKEM/FrodoKEM.xpr
+update_compile_order -fileset sources_1
+launch_simulation

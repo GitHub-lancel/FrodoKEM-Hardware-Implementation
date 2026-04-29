@@ -1,0 +1,32 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../../Xlinx/2025.1/Vivado/data/rsb/busdef" \
+"../../../../../../SRC/AddrGenUnit.v" \
+"../../../../../../SRC/DecodeSet.v" \
+"../../../../../../SRC/EncodeSet.v" \
+"../../../../../../SRC/Frodo_top.v" \
+"../../../../../../SRC/InstDecoder.v" \
+"../../../../../../SRC/MatrixAddSet.v" \
+"../../../../../../SRC/MatrixMACSet.v" \
+"../../../../../../SRC/MatrixMulAddSet.v" \
+"../../../../../../SRC/MatrixSubSet.v" \
+"../../../../../../SRC/PackSet.v" \
+"../../../../../../SRC/RAM _Arbitration.v" \
+"../../../../../../SRC/shake.v" \
+"../../../../../../SRC/SampleMatrixSet.v" \
+"../../../../../../SRC/UnpackSet.v" \
+"../../../../../../SRC/bidirectional_fifo.v" \
+"../../../../../../SRC/control.v" \
+"../../../../../../dram448_r.v" \
+"../../../../../../dram64_r.v" \
+"../../../../../../dual_ram.v" \
+"../../../../../../dual_ram_asyn.v" \
+"../../../../../../SRC/roundmod.v" \
+"../../../../../../SRC/theta.v" \
+"../../../../../../SRC/thopichiiota.v" \
+"../../../../FrodoKEM.srcs/sim_1/new/TB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
