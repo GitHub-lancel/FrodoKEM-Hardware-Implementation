@@ -1,0 +1,187 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Wed May  6 21:59:54 2026
+| Host         : DESKTOP-KKLUIKL running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TOP_control_sets_placed.rpt
+| Design       : TOP
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   109 |
+|    Minimum number of control sets                        |    89 |
+|    Addition due to synthesis replication                 |    20 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   157 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   109 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |    18 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     5 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    78 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              38 |           17 |
+| No           | No                    | Yes                    |            1035 |          371 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            5386 |         3142 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------+---------------------------------------------------------------------------------+--------------------------+------------------+----------------+--------------+
+|   Clock Signal   |                                  Enable Signal                                  |     Set/Reset Signal     | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------+---------------------------------------------------------------------------------+--------------------------+------------------+----------------+--------------+
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/unpackcnt[3]_i_1_n_0                                      | u_Frodo_top/u_SHAKE/rstn |                2 |              4 |         2.00 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_UnpackSet/unpackOut_val                                           | u_Frodo_top/u_SHAKE/rstn |                2 |              4 |         2.00 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_DecodeSet/buf_cnt                                                 | u_Frodo_top/u_SHAKE/rstn |                2 |              4 |         2.00 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/u_instDecoder/FSM_onehot_substate_reg[14]_0[0]            | u_Frodo_top/u_SHAKE/rstn |                2 |              4 |         2.00 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/pack_ival_o_reg_0[0]                                      | u_Frodo_top/u_SHAKE/rstn |                1 |              4 |         4.00 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/u_AddrGenUnit/FSM_onehot_substate_reg[11][0]              | u_Frodo_top/u_SHAKE/rstn |                2 |              4 |         2.00 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/mac0backflag_reg_n_0                                      | u_Frodo_top/u_SHAKE/rstn |                1 |              4 |         4.00 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_EncodeSet/out_cnt                                                 | u_Frodo_top/u_SHAKE/rstn |                2 |              4 |         2.00 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/u_instDecoder/FSM_onehot_substate_reg[1]_2[0]             | u_Frodo_top/u_SHAKE/rstn |                3 |              5 |         1.67 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_PackSet/buf_bits[6]_i_1_n_0                                       | u_Frodo_top/u_SHAKE/rstn |                2 |              5 |         2.50 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/u_AddrGenUnit/E[0]                                        | u_Frodo_top/u_SHAKE/rstn |                2 |              5 |         2.50 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/u_instDecoder/FSM_onehot_substate_reg[1][0]               | u_Frodo_top/u_SHAKE/rstn |                2 |              5 |         2.50 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/u_instDecoder/addra_add_r_r_reg[0]                        | u_Frodo_top/u_SHAKE/rstn |                2 |              5 |         2.50 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_UnpackSet/buf_bits[6]_i_1__0_n_0                                  | u_Frodo_top/u_SHAKE/rstn |                2 |              5 |         2.50 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/kec_cnt[4]_i_1_n_0                                          | u_Frodo_top/u_SHAKE/rstn |                2 |              5 |         2.50 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/mac2encnt                                                 | u_Frodo_top/u_SHAKE/rstn |                3 |              5 |         1.67 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/hash448outcnt[4]_i_1_n_0                                  | u_Frodo_top/u_SHAKE/rstn |                2 |              5 |         2.50 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/din_cnt[4]_i_1_n_0                                          | u_Frodo_top/u_SHAKE/rstn |                2 |              5 |         2.50 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/u_instDecoder/FSM_onehot_substate_reg[1]_0[0]             | u_Frodo_top/u_SHAKE/rstn |                3 |              6 |         2.00 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/u_instDecoder/FSM_onehot_substate_reg[1]_1[0]             | u_Frodo_top/u_SHAKE/rstn |                2 |              6 |         3.00 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/samplebubble[6]_i_1_n_0                                   | u_Frodo_top/u_SHAKE/rstn |                3 |              7 |         2.33 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/u_instDecoder/string0                                     | u_Frodo_top/u_SHAKE/rstn |                5 |              9 |         1.80 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/u_instDecoder/rd_num_0                                    | u_Frodo_top/u_SHAKE/rstn |                3 |              9 |         3.00 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/u_instDecoder/skips[8]_i_1_n_0                            | u_Frodo_top/u_SHAKE/rstn |                3 |              9 |         3.00 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/sqz_cnt[8]_i_1_n_0                                          | u_Frodo_top/u_SHAKE/rstn |                3 |              9 |         3.00 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/u_instDecoder/inst_addr[9]_i_1_n_0                        | u_Frodo_top/u_SHAKE/rstn |                5 |             10 |         2.00 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/u_instDecoder/FSM_onehot_substate_reg[3][0]               | u_Frodo_top/u_SHAKE/rstn |                4 |             12 |         3.00 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/u_instDecoder/kloop[11]_C_i_1_n_0                         | u_Frodo_top/u_SHAKE/rstn |                4 |             12 |         3.00 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/u_instDecoder/jloop[11]_C_i_1_n_0                         | u_Frodo_top/u_SHAKE/rstn |                4 |             12 |         3.00 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/u_AddrGenUnit/loopj[11]_i_1_n_0                           | u_Frodo_top/u_SHAKE/rstn |                3 |             12 |         4.00 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/u_instDecoder/iloop[11]_C_i_1_n_0                         | u_Frodo_top/u_SHAKE/rstn |                4 |             12 |         3.00 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/u_instDecoder/E[0]                                        | u_Frodo_top/u_SHAKE/rstn |                5 |             16 |         3.20 |
+|  clk_i_IBUF_BUFG | buttle_IBUF                                                                     | u_Frodo_top/u_SHAKE/rstn |               14 |             23 |         1.64 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/u_AddrGenUnit/i_row_acc                                   | u_Frodo_top/u_SHAKE/rstn |                8 |             24 |         3.00 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/u_AddrGenUnit/k_row_acc                                   | u_Frodo_top/u_SHAKE/rstn |                9 |             36 |         4.00 |
+|  clk_i_IBUF_BUFG |                                                                                 |                          |               17 |             38 |         2.24 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_MatrixMACSet/vld_s6                                               | u_Frodo_top/u_SHAKE/rstn |               19 |             50 |         2.63 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/doutflag_rdptr_reg                                        | u_Frodo_top/u_SHAKE/rstn |               17 |             51 |         3.00 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/u_instDecoder/FSM_onehot_CS_reg_n_0_[5]                   | u_Frodo_top/u_SHAKE/rstn |               26 |             54 |         2.08 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/u_instDecoder/addrbcd[63]_i_1_n_0                         | u_Frodo_top/u_SHAKE/rstn |               27 |             59 |         2.19 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/u_instDecoder/aloop_pile[59]_i_1_n_0                      | u_Frodo_top/u_SHAKE/rstn |               24 |             60 |         2.50 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/E[3]                                                      | u_Frodo_top/u_SHAKE/rstn |               34 |             64 |         1.88 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/E[5]                                                      | u_Frodo_top/u_SHAKE/rstn |               29 |             64 |         2.21 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/E[1]                                                      | u_Frodo_top/u_SHAKE/rstn |               28 |             64 |         2.29 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/E[2]                                                      | u_Frodo_top/u_SHAKE/rstn |               34 |             64 |         1.88 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/E[4]                                                      | u_Frodo_top/u_SHAKE/rstn |               31 |             64 |         2.06 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/E[0]                                                      | u_Frodo_top/u_SHAKE/rstn |               35 |             64 |         1.83 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/doutflag_obuf_reg_rep__0_n_0                                | u_Frodo_top/u_SHAKE/rstn |               41 |             64 |         1.56 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/doutflag_obuf_reg_rep__3_n_0                                | u_Frodo_top/u_SHAKE/rstn |               37 |             64 |         1.73 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/doutflag_obuf_reg_rep__14_n_0                               | u_Frodo_top/u_SHAKE/rstn |               36 |             64 |         1.78 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/doutflag_obuf_reg_rep__15_n_0                               | u_Frodo_top/u_SHAKE/rstn |               36 |             64 |         1.78 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/doutflag_obuf_reg_rep__13_n_0                               | u_Frodo_top/u_SHAKE/rstn |               34 |             64 |         1.88 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/doutflag_obuf_reg_rep__11_n_0                               | u_Frodo_top/u_SHAKE/rstn |               30 |             64 |         2.13 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/doutflag_obuf_reg_rep__8_n_0                                | u_Frodo_top/u_SHAKE/rstn |               31 |             64 |         2.06 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/doutflag_obuf_reg_rep_n_0                                   | u_Frodo_top/u_SHAKE/rstn |               36 |             64 |         1.78 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_keccak_buf_lane[20].g_pad_sha128.keccak_buf[1343]_i_1_n_0 | u_Frodo_top/u_SHAKE/rstn |               53 |             64 |         1.21 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_keccak_buf_lane[21].g_no_pad.keccak_buf[1407]_i_1_n_0     | u_Frodo_top/u_SHAKE/rstn |               51 |             64 |         1.25 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_keccak_buf_lane[22].g_no_pad.keccak_buf[1471]_i_1_n_0     | u_Frodo_top/u_SHAKE/rstn |               41 |             64 |         1.56 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_keccak_buf_lane[23].g_no_pad.keccak_buf[1535]_i_1_n_0     | u_Frodo_top/u_SHAKE/rstn |               47 |             64 |         1.36 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_keccak_buf_lane[24].g_no_pad.keccak_buf[1599]_i_1_n_0     | u_Frodo_top/u_SHAKE/rstn |               41 |             64 |         1.56 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_keccak_buf_lane[2].g_no_pad.keccak_buf[191]_i_1_n_0       | u_Frodo_top/u_SHAKE/rstn |               40 |             64 |         1.60 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_keccak_buf_lane[3].g_no_pad.keccak_buf[255]_i_1_n_0       | u_Frodo_top/u_SHAKE/rstn |               38 |             64 |         1.68 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_keccak_buf_lane[4].g_no_pad.keccak_buf[319]_i_1_n_0       | u_Frodo_top/u_SHAKE/rstn |               51 |             64 |         1.25 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_keccak_buf_lane[5].g_no_pad.keccak_buf[383]_i_1_n_0       | u_Frodo_top/u_SHAKE/rstn |               40 |             64 |         1.60 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_keccak_buf_lane[6].g_no_pad.keccak_buf[447]_i_1_n_0       | u_Frodo_top/u_SHAKE/rstn |               47 |             64 |         1.36 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_keccak_buf_lane[7].g_no_pad.keccak_buf[511]_i_1_n_0       | u_Frodo_top/u_SHAKE/rstn |               40 |             64 |         1.60 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_keccak_buf_lane[8].g_no_pad.keccak_buf[575]_i_1_n_0       | u_Frodo_top/u_SHAKE/rstn |               45 |             64 |         1.42 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_keccak_buf_lane[9].g_no_pad.keccak_buf[639]_i_1_n_0       | u_Frodo_top/u_SHAKE/rstn |               48 |             64 |         1.33 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_sqzout448[0].sqzout448_ce                                 | u_Frodo_top/u_SHAKE/rstn |               50 |             64 |         1.28 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_sqzout448[1].sqzout448_ce                                 | u_Frodo_top/u_SHAKE/rstn |               48 |             64 |         1.33 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_sqzout448[2].sqzout448_ce                                 | u_Frodo_top/u_SHAKE/rstn |               53 |             64 |         1.21 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_sqzout448[3].sqzout448_ce                                 | u_Frodo_top/u_SHAKE/rstn |               50 |             64 |         1.28 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_sqzout448[4].sqzout448_ce                                 | u_Frodo_top/u_SHAKE/rstn |               48 |             64 |         1.33 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_sqzout448[5].sqzout448_ce                                 | u_Frodo_top/u_SHAKE/rstn |               49 |             64 |         1.31 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_sqzout448[6].sqzout448_ce                                 | u_Frodo_top/u_SHAKE/rstn |               50 |             64 |         1.28 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_keccak_buf_lane[19].g_no_pad.keccak_buf[1279]_i_1_n_0     | u_Frodo_top/u_SHAKE/rstn |               48 |             64 |         1.33 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_keccak_buf_lane[18].g_no_pad.keccak_buf[1215]_i_1_n_0     | u_Frodo_top/u_SHAKE/rstn |               49 |             64 |         1.31 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/sqzout64[63]_i_1_n_0                                        | u_Frodo_top/u_SHAKE/rstn |               30 |             64 |         2.13 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_keccak_buf_lane[17].g_no_pad.keccak_buf[1151]_i_1_n_0     | u_Frodo_top/u_SHAKE/rstn |               43 |             64 |         1.49 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_keccak_buf_lane[16].g_pad_sha256.keccak_buf[1087]_i_1_n_0 | u_Frodo_top/u_SHAKE/rstn |               45 |             64 |         1.42 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_keccak_buf_lane[15].g_no_pad.keccak_buf[1023]_i_1_n_0     | u_Frodo_top/u_SHAKE/rstn |               43 |             64 |         1.49 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_keccak_buf_lane[14].g_no_pad.keccak_buf[959]_i_1_n_0      | u_Frodo_top/u_SHAKE/rstn |               51 |             64 |         1.25 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_keccak_buf_lane[13].g_no_pad.keccak_buf[895]_i_1_n_0      | u_Frodo_top/u_SHAKE/rstn |               43 |             64 |         1.49 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_keccak_buf_lane[12].g_no_pad.keccak_buf[831]_i_1_n_0      | u_Frodo_top/u_SHAKE/rstn |               43 |             64 |         1.49 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_keccak_buf_lane[11].g_no_pad.keccak_buf[767]_i_1_n_0      | u_Frodo_top/u_SHAKE/rstn |               41 |             64 |         1.56 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_keccak_buf_lane[10].g_no_pad.keccak_buf[703]_i_1_n_0      | u_Frodo_top/u_SHAKE/rstn |               38 |             64 |         1.68 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_bidirectional_fifo/buffer[447]_i_1_n_0                            | u_Frodo_top/u_SHAKE/rstn |               26 |             64 |         2.46 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_keccak_buf_lane[0].g_no_pad.keccak_buf[63]_i_1_n_0        | u_Frodo_top/u_SHAKE/rstn |               42 |             64 |         1.52 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/doutflag_obuf_reg_rep__1_n_0                                | u_Frodo_top/u_SHAKE/rstn |               42 |             64 |         1.52 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/doutflag_obuf_reg_rep__2_n_0                                | u_Frodo_top/u_SHAKE/rstn |               39 |             64 |         1.64 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/g_keccak_buf_lane[1].g_no_pad.keccak_buf[127]_i_1_n_0       | u_Frodo_top/u_SHAKE/rstn |               44 |             64 |         1.45 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/doutflag_obuf_reg_rep__9_n_0                                | u_Frodo_top/u_SHAKE/rstn |               25 |             64 |         2.56 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/doutflag_obuf_reg_rep__18_n_0                               | u_Frodo_top/u_SHAKE/rstn |               36 |             64 |         1.78 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/doutflag_obuf_reg_rep__12_n_0                               | u_Frodo_top/u_SHAKE/rstn |               36 |             64 |         1.78 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/doutflag_obuf_reg_rep__10_n_0                               | u_Frodo_top/u_SHAKE/rstn |               31 |             64 |         2.06 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/doutflag_obuf_reg_rep__6_n_0                                | u_Frodo_top/u_SHAKE/rstn |               28 |             64 |         2.29 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/doutflag_obuf                                               | u_Frodo_top/u_SHAKE/rstn |               48 |             64 |         1.33 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/doutflag_obuf_reg_rep__7_n_0                                | u_Frodo_top/u_SHAKE/rstn |               33 |             64 |         1.94 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/doutflag_obuf_reg_rep__5_n_0                                | u_Frodo_top/u_SHAKE/rstn |               26 |             64 |         2.46 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/doutflag_obuf_reg_rep__4_n_0                                | u_Frodo_top/u_SHAKE/rstn |               47 |             64 |         1.36 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/doutflag_obuf_reg_rep__17_n_0                               | u_Frodo_top/u_SHAKE/rstn |               37 |             64 |         1.73 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/doutflag_obuf_reg_rep__16_n_0                               | u_Frodo_top/u_SHAKE/rstn |               35 |             64 |         1.83 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/u_instDecoder/addra[79]_i_1_n_0                           | u_Frodo_top/u_SHAKE/rstn |               23 |             70 |         3.04 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_SHAKE/in_buffer[79]_i_1_n_0                                       | u_Frodo_top/u_SHAKE/rstn |               43 |             80 |         1.86 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/packIn_val                                                | u_Frodo_top/u_SHAKE/rstn |               50 |            120 |         2.40 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_control/unpackIn_val                                              | u_Frodo_top/u_SHAKE/rstn |               56 |            120 |         2.14 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_DecodeSet/buffer                                                  | u_Frodo_top/u_SHAKE/rstn |              142 |            256 |         1.80 |
+|  clk_i_IBUF_BUFG | u_Frodo_top/u_EncodeSet/buffer                                                  | u_Frodo_top/u_SHAKE/rstn |              146 |            256 |         1.75 |
+|  clk_i_IBUF_BUFG |                                                                                 | u_Frodo_top/u_SHAKE/rstn |              371 |           1035 |         2.79 |
++------------------+---------------------------------------------------------------------------------+--------------------------+------------------+----------------+--------------+
+
+

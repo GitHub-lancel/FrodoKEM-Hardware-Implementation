@@ -1,0 +1,58 @@
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xlinx/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_11 -L dist_mem_gen_v8_0_17 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_TOP_behav xil_defaultlib.tb_TOP xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'sqz_cnt' is not connected on this instance [D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/SRC/Frodo_top.v:789]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SampleMatrixSet_default
+Compiling module xil_defaultlib.bidirectional_fifo
+Compiling module xil_defaultlib.theta
+Compiling module xil_defaultlib.thopichiiota
+Compiling module xil_defaultlib.SHAKE
+Compiling module xil_defaultlib.PackSet
+Compiling module xil_defaultlib.UnpackSet
+Compiling module xil_defaultlib.roundmod_default
+Compiling module xil_defaultlib.roundmod(B=3,Q=16)
+Compiling module xil_defaultlib.roundmod(B=4,Q=16)
+Compiling module xil_defaultlib.DecodeSet_default
+Compiling module xil_defaultlib.EncodeSet
+Compiling module blk_mem_gen_v8_4_11.blk_mem_gen_v8_4_11_output_stage...
+Compiling module blk_mem_gen_v8_4_11.blk_mem_gen_v8_4_11_softecc_outp...
+Compiling module blk_mem_gen_v8_4_11.blk_mem_gen_v8_4_11_mem_module(C...
+Compiling module blk_mem_gen_v8_4_11.blk_mem_axi_regs_fwd_v8_4(C_DATA...
+Compiling module blk_mem_gen_v8_4_11.blk_mem_gen_v8_4_11(C_FAMILY="ar...
+Compiling module xil_defaultlib.RAM64a
+Compiling module blk_mem_gen_v8_4_11.blk_mem_gen_v8_4_11_mem_module(C...
+Compiling module blk_mem_gen_v8_4_11.blk_mem_gen_v8_4_11(C_FAMILY="ar...
+Compiling module xil_defaultlib.RAM64b
+Compiling module blk_mem_gen_v8_4_11.blk_mem_gen_v8_4_11_output_stage...
+Compiling module blk_mem_gen_v8_4_11.blk_mem_gen_v8_4_11_softecc_outp...
+Compiling module blk_mem_gen_v8_4_11.blk_mem_gen_v8_4_11_mem_module(C...
+Compiling module blk_mem_gen_v8_4_11.blk_mem_gen_v8_4_11(C_FAMILY="ar...
+Compiling module xil_defaultlib.RAM448
+Compiling module xil_defaultlib.MatrixAddSet_default
+Compiling module xil_defaultlib.MatrixMACSet_default
+Compiling module xil_defaultlib.MatrixMulAddSet_default
+Compiling module xil_defaultlib.MatrixSubSet_default
+Compiling module dist_mem_gen_v8_0_17.dist_mem_gen_v8_0_17(C_FAMILY="a...
+Compiling module xil_defaultlib.ADDRBASE_ROM
+Compiling module blk_mem_gen_v8_4_11.blk_mem_gen_v8_4_11_output_stage...
+Compiling module blk_mem_gen_v8_4_11.blk_mem_gen_v8_4_11_softecc_outp...
+Compiling module blk_mem_gen_v8_4_11.blk_mem_gen_v8_4_11_mem_module(C...
+Compiling module blk_mem_gen_v8_4_11.blk_mem_gen_v8_4_11(C_FAMILY="ar...
+Compiling module xil_defaultlib.INSTROM
+Compiling module xil_defaultlib.instDecoder
+Compiling module xil_defaultlib.RAM_Arbitration
+Compiling module xil_defaultlib.AddrGenUnit
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.Frodo_top
+Compiling module xil_defaultlib.TOP
+Compiling module xil_defaultlib.tb_TOP
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_TOP_behav

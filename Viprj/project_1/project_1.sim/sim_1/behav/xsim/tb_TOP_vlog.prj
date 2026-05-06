@@ -1,0 +1,34 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../../Xlinx/2025.1/Vivado/data/rsb/busdef" \
+"../../../../project_1.gen/sources_1/ip/INSTROM/sim/INSTROM.v" \
+"../../../../project_1.gen/sources_1/ip/ADDRBASE_ROM/sim/ADDRBASE_ROM.v" \
+"../../../../project_1.gen/sources_1/ip/RAM448/sim/RAM448.v" \
+"../../../../project_1.gen/sources_1/ip/RAM64b/sim/RAM64b.v" \
+"../../../../project_1.gen/sources_1/ip/RAM64a/sim/RAM64a.v" \
+"../../../../../../SRC/AddrGenUnit.v" \
+"../../../../../../SRC/DecodeSet.v" \
+"../../../../../../SRC/EncodeSet.v" \
+"../../../../../../SRC/Frodo_top.v" \
+"../../../../../../SRC/InstDecoder.v" \
+"../../../../../../SRC/MatrixAddSet.v" \
+"../../../../../../SRC/MatrixMACSet.v" \
+"../../../../../../SRC/MatrixMulAddSet.v" \
+"../../../../../../SRC/MatrixSubSet.v" \
+"../../../../../../SRC/PackSet.v" \
+"../../../../../../SRC/RAM _Arbitration.v" \
+"../../../../../../SRC/SampleMatrixSet.v" \
+"../../../../../../SRC/TOP.v" \
+"../../../../../../SRC/UnpackSet.v" \
+"../../../../../../SRC/bidirectional_fifo.v" \
+"../../../../../../SRC/control.v" \
+"../../../../../../SRC/roundmod.v" \
+"../../../../../../SRC/shake.v" \
+"../../../../../../SRC/theta.v" \
+"../../../../../../SRC/thopichiiota.v" \
+"../../../../../../SRC/TB_TOP.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

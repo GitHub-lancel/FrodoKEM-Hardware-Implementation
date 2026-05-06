@@ -1,0 +1,60 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/Viprj/project_1/project_1.gen/sources_1/ip/INSTROM/sim/INSTROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/Viprj/project_1/project_1.gen/sources_1/ip/ADDRBASE_ROM/sim/ADDRBASE_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADDRBASE_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/Viprj/project_1/project_1.gen/sources_1/ip/RAM448/sim/RAM448.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM448
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/Viprj/project_1/project_1.gen/sources_1/ip/RAM64b/sim/RAM64b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM64b
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/Viprj/project_1/project_1.gen/sources_1/ip/RAM64a/sim/RAM64a.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM64a
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/SRC/AddrGenUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AddrGenUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/SRC/DecodeSet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DecodeSet
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/SRC/EncodeSet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EncodeSet
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/SRC/Frodo_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Frodo_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/SRC/InstDecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instDecoder
+WARNING: [VRFC 10-3380] identifier 'CS' is used before its declaration [D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/SRC/InstDecoder.v:120]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/SRC/MatrixAddSet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MatrixAddSet
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/SRC/MatrixMACSet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MatrixMACSet
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/SRC/MatrixMulAddSet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MatrixMulAddSet
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/SRC/MatrixSubSet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MatrixSubSet
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/SRC/PackSet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PackSet
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/SRC/RAM _Arbitration.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_Arbitration
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/SRC/SampleMatrixSet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SampleMatrixSet
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/SRC/TOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/SRC/UnpackSet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UnpackSet
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/SRC/bidirectional_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bidirectional_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/SRC/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+WARNING: [VRFC 10-3380] identifier 'sqzout64_en' is used before its declaration [D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/SRC/control.v:118]
+WARNING: [VRFC 10-3380] identifier 'DONE_r' is used before its declaration [D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/SRC/control.v:337]
+WARNING: [VRFC 10-3380] identifier 'fifo64outval' is used before its declaration [D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/SRC/control.v:492]
+WARNING: [VRFC 10-3380] identifier 'pingpangflag' is used before its declaration [D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/SRC/control.v:974]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/SRC/roundmod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module roundmod
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/SRC/shake.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SHAKE
+WARNING: [VRFC 10-3380] identifier 'CS' is used before its declaration [D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/SRC/shake.v:64]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/SRC/theta.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module theta
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/SRC/thopichiiota.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module thopichiiota
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/SRC/TB_TOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_TOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FrodoKem_submit/FrodoKEM-Hardware-Implementation/Viprj/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

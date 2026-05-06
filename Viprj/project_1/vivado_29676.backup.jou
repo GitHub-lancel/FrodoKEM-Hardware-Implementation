@@ -1,0 +1,97 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Mon May  4 17:29:30 2026
+# Process ID         : 29676
+# Current directory  : D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent24016 D:\Frodokem_2026_tx\FrodoKEM\Viprj\project_1\project_1.xpr
+# Log file           : D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/vivado.log
+# Journal file       : D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1\vivado.jou
+# Running On         : DESKTOP-KKLUIKL
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : AMD Ryzen 7 5800H with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 17024 MB
+# Swap memory        : 14495 MB
+# Total Virtual      : 31520 MB
+# Available Virtual  : 15761 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+set_property -dict [list \
+  CONFIG.Coe_File {D:/Frodokem_2026_tx/FrodoKEM/COE/RAM64a.coe} \
+  CONFIG.Write_Depth_A {2760} \
+] [get_ips RAM64a]
+generate_target all [get_files  D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.srcs/sources_1/ip/RAM64a/RAM64a.xci]
+catch { config_ip_cache -export [get_ips -all RAM64a] }
+export_ip_user_files -of_objects [get_files D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.srcs/sources_1/ip/RAM64a/RAM64a.xci] -no_script -sync -force -quiet
+reset_run RAM64a_synth_1
+launch_runs RAM64a_synth_1 -jobs 8
+wait_on_run RAM64a_synth_1
+export_simulation -lib_map_path [list {modelsim=D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.cache/compile_simlib/modelsim} {questa=D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.cache/compile_simlib/questa} {riviera=D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.cache/compile_simlib/riviera} {activehdl=D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.cache/compile_simlib/activehdl}] -of_objects [get_files D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.srcs/sources_1/ip/RAM64a/RAM64a.xci] -directory D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.ip_user_files -ipstatic_source_dir D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+set_property -dict [list \
+  CONFIG.Coe_File {D:/Frodokem_2026_tx/FrodoKEM/COE/RAM64b.coe} \
+  CONFIG.Write_Depth_A {2800} \
+] [get_ips RAM64b]
+generate_target all [get_files  D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.srcs/sources_1/ip/RAM64b/RAM64b.xci]
+catch { config_ip_cache -export [get_ips -all RAM64b] }
+export_ip_user_files -of_objects [get_files D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.srcs/sources_1/ip/RAM64b/RAM64b.xci] -no_script -sync -force -quiet
+reset_run RAM64b_synth_1
+launch_runs RAM64b_synth_1 -jobs 8
+wait_on_run RAM64b_synth_1
+export_simulation -lib_map_path [list {modelsim=D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.cache/compile_simlib/modelsim} {questa=D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.cache/compile_simlib/questa} {riviera=D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.cache/compile_simlib/riviera} {activehdl=D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.cache/compile_simlib/activehdl}] -of_objects [get_files D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.srcs/sources_1/ip/RAM64b/RAM64b.xci] -directory D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.ip_user_files -ipstatic_source_dir D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+set_property CONFIG.coefficient_file {D:/Frodokem_2026_tx/FrodoKEM/COE/Addr.coe} [get_ips ADDRBASE_ROM]
+generate_target all [get_files  D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.srcs/sources_1/ip/ADDRBASE_ROM/ADDRBASE_ROM.xci]
+catch { config_ip_cache -export [get_ips -all ADDRBASE_ROM] }
+export_ip_user_files -of_objects [get_files D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.srcs/sources_1/ip/ADDRBASE_ROM/ADDRBASE_ROM.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.srcs/sources_1/ip/ADDRBASE_ROM/ADDRBASE_ROM.xci]
+launch_runs ADDRBASE_ROM_synth_1 -jobs 8
+wait_on_run ADDRBASE_ROM_synth_1
+export_simulation -lib_map_path [list {modelsim=D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.cache/compile_simlib/modelsim} {questa=D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.cache/compile_simlib/questa} {riviera=D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.cache/compile_simlib/riviera} {activehdl=D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.cache/compile_simlib/activehdl}] -of_objects [get_files D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.srcs/sources_1/ip/ADDRBASE_ROM/ADDRBASE_ROM.xci] -directory D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.ip_user_files -ipstatic_source_dir D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+set_property CONFIG.Coe_File {D:/Frodokem_2026_tx/FrodoKEM/COE/inst.coe} [get_ips INSTROM]
+generate_target all [get_files  D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.srcs/sources_1/ip/INSTROM/INSTROM.xci]
+catch { config_ip_cache -export [get_ips -all INSTROM] }
+export_ip_user_files -of_objects [get_files D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.srcs/sources_1/ip/INSTROM/INSTROM.xci] -no_script -sync -force -quiet
+reset_run INSTROM_synth_1
+launch_runs INSTROM_synth_1 -jobs 8
+wait_on_run INSTROM_synth_1
+export_simulation -lib_map_path [list {modelsim=D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.cache/compile_simlib/modelsim} {questa=D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.cache/compile_simlib/questa} {riviera=D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.cache/compile_simlib/riviera} {activehdl=D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.cache/compile_simlib/activehdl}] -of_objects [get_files D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.srcs/sources_1/ip/INSTROM/INSTROM.xci] -directory D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.ip_user_files -ipstatic_source_dir D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/project_1.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse D:/Frodokem_2026_tx/FrodoKEM/SRC/TB_TOP.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+set_property -name {xsim.simulate.log_all_signals} -value {true} -objects [get_filesets sim_1]
+launch_simulation
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+source tb_TOP.tcl
+current_wave_config {Untitled 1}
+add_wave {{/tb_TOP/u_TOP/u_Frodo_top/u_control/u_instDecoder/opcode}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb_TOP/u_TOP/u_Frodo_top/u_control/u_instDecoder/encode_done}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb_TOP/u_TOP/dout}} 
+run 5 ms
+current_wave_config {Untitled 1}
+add_wave {{/tb_TOP/u_TOP/u_Frodo_top/ram64a/wea}} {{/tb_TOP/u_TOP/u_Frodo_top/ram64a/addra}} {{/tb_TOP/u_TOP/u_Frodo_top/ram64a/dina}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb_TOP/u_TOP/u_Frodo_top/ram64a/web}} {{/tb_TOP/u_TOP/u_Frodo_top/ram64a/addrb}} {{/tb_TOP/u_TOP/u_Frodo_top/ram64a/dinb}} {{/tb_TOP/u_TOP/u_Frodo_top/ram64a/doutb}} 
+relaunch_sim
+run 5 ms
+current_wave_config {Untitled 1}
+add_wave {{/tb_TOP/u_TOP/u_Frodo_top/u_SHAKE/msg_val}} {{/tb_TOP/u_TOP/u_Frodo_top/u_SHAKE/lastmsg_val_i}} {{/tb_TOP/u_TOP/u_Frodo_top/u_SHAKE/indexa}} {{/tb_TOP/u_TOP/u_Frodo_top/u_SHAKE/indexa_val}} 
+run 5 ms
+run 5 ms
+current_wave_config {Untitled 1}
+add_wave {{/tb_TOP/u_TOP/u_Frodo_top/u_SHAKE/indexb}} 
+run 5 ms
+save_wave_config {D:/Frodokem_2026_tx/FrodoKEM/Viprj/project_1/tb_TOP_behav.wcfg}
+close_sim

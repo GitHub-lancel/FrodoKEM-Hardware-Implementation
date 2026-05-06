@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../../../Xlinx/2025.1/Vivado/data/rsb/busdef" \
+"tb_TOP_time_impl.v" \
+"../../../../../../../SRC/TB_TOP.v" \
+
+# Do not sort compile order
+nosort

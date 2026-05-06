@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="RAM448_synth_1" LaunchPart="xc7a35tfgg484-2" LaunchTime="1777445851">
+  <File Type="REPORTS-TCL" Name="RAM448_reports.tcl"/>
+  <File Type="RDS-UTIL" Name="RAM448_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="RAM448_utilization_synth.pb"/>
+  <File Type="PA-TCL" Name="RAM448.tcl"/>
+  <File Type="RDS-RDS" Name="RAM448.vds"/>
+  <File Type="RDS-DCP" Name="RAM448.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RAM448" RelGenDir="$PGENDIR/RAM448">
+    <File Path="$PSRCDIR/sources_1/ip/RAM448/RAM448.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="RAM448"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RAM448" RelGenDir="$PGENDIR/RAM448">
+    <File Path="$PSRCDIR/sources_1/ip/RAM448/RAM448.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="RAM448"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

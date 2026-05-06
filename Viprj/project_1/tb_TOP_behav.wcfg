@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_TOP_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_TOP" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="4,868,216.600 ns"></ZoomStartTime>
+      <ZoomEndTime time="4,868,324.401 ns"></ZoomEndTime>
+      <Cursor1Time time="4,868,256.800 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="193"></NameColumnWidth>
+      <ValueColumnWidth column_width="299"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/tb_TOP/clk_i" type="logic">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_TOP/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_TOP/buttle" type="logic">
+      <obj_property name="ElementShortName">buttle</obj_property>
+      <obj_property name="ObjectShortName">buttle</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_TOP/swtich" type="logic">
+      <obj_property name="ElementShortName">swtich</obj_property>
+      <obj_property name="ObjectShortName">swtich</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_TOP/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_TOP/u_TOP/u_Frodo_top/opcode" type="array">
+      <obj_property name="ElementShortName">opcode[3:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_TOP/u_TOP/u_Frodo_top/u_SHAKE/sqzout64" type="array">
+      <obj_property name="ElementShortName">sqzout64[63:0]</obj_property>
+      <obj_property name="ObjectShortName">sqzout64[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_TOP/u_TOP/u_Frodo_top/valid" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+      <obj_property name="label">Odata_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_TOP/u_TOP/u_Frodo_top/dout" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dout[63:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[63:0]</obj_property>
+      <obj_property name="label">Odata[63:0]</obj_property>
+   </wvobject>
+</wave_config>

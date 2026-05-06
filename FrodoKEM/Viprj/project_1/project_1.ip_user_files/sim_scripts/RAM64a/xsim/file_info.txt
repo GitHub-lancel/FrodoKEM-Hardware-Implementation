@@ -1,2 +1,0 @@
-RAM64a.v,verilog,xil_defaultlib,../../../../project_1.gen/sources_1/ip/RAM64a/sim/RAM64a.v,incdir="../../../../../../../../../Xlinx/2025.1/Vivado/data/rsb/busdef"
-glbl.v,Verilog,xil_defaultlib,glbl.v
